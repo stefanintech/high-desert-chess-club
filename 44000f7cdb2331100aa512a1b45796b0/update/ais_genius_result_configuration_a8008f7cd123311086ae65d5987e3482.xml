@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_genius_result_configuration">
+    <ais_genius_result_configuration action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category/>
+        <handler_type>search</handler_type>
+        <name>Event Registration Genius Results</name>
+        <return_fields>event_name,date_from,date_to,purpose,is_full,spaces_left,waitlisted,organizer</return_fields>
+        <script><![CDATA[function process(context) {
+	var answer = new sn_ais.GeniusResultAnswer();
+
+	answer.setTable('x_1107092_high_d_0_event');
+	answer.setSearchLimit(5);
+	var predictionResult = context.getPredictionResult();
+	if (predictionResult && predictionResult.length == 1) {
+		var detail = predictionResult[0];
+		if (detail['result'] && detail['result']['entities']) {
+			var entities = detail['result']['entities'];
+			for (var i = 0; i < entities.length; i++) {
+				if (entities[i]['name'].endsWith('catalogItem')) {
+					var matchingSegments = entities[i]['matchingSegments'];
+					for (var j = 0; j < matchingSegments.length; j++)
+						answer.addSearchPhrases([matchingSegments[j]['value']]);
+				}
+			}
+		}
+	}
+
+	return answer;
+}]]></script>
+        <sys_class_name>ais_genius_result_configuration</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:51:01</sys_created_on>
+        <sys_id>a8008f7cd123311086ae65d5987e3482</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Event Registration Genius Results</sys_name>
+        <sys_package display_value="High Desert Chess Club" source="x_1107092_high_d_0">44000f7cdb2331100aa512a1b45796b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_update_name>ais_genius_result_configuration_a8008f7cd123311086ae65d5987e3482</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:51:01</sys_updated_on>
+        <term/>
+        <trigger_condition>intent</trigger_condition>
+    </ais_genius_result_configuration>
+</record_update>

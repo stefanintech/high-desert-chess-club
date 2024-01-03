@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_action_param_map">
+    <sys_sg_action_param_map action="INSERT_OR_UPDATE">
+        <button display_value="Edit">20004f7c53233110e45b4804d3e3e7b2</button>
+        <item_parameter display_value="Event reminder date">a4004f7ce62331103ef442a1fb068caf</item_parameter>
+        <sys_class_name>sys_sg_action_param_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:51:17</sys_created_on>
+        <sys_id>d4004f7c81233110a2009cea33207fae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>a4004f7ce62331103ef442a1fb068caf</sys_name>
+        <sys_package display_value="High Desert Chess Club" source="x_1107092_high_d_0">44000f7cdb2331100aa512a1b45796b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_update_name>sys_sg_action_param_map_d4004f7c81233110a2009cea33207fae</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:51:17</sys_updated_on>
+        <ui_parameter display_value="Event reminder date">64004f7c6c23311019706b72ea3c25b0</ui_parameter>
+    </sys_sg_action_param_map>
+</record_update>

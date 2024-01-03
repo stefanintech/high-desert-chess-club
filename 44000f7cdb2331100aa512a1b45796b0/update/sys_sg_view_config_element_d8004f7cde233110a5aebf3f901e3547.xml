@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_config_element">
+    <sys_sg_view_config_element action="INSERT_OR_UPDATE">
+        <name>text_21_element</name>
+        <sys_class_name>sys_sg_view_config_element</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:57</sys_created_on>
+        <sys_id>d8004f7cde233110a5aebf3f901e3547</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>text_21_element</sys_name>
+        <sys_package display_value="High Desert Chess Club" source="x_1107092_high_d_0">44000f7cdb2331100aa512a1b45796b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_update_name>sys_sg_view_config_element_d8004f7cde233110a5aebf3f901e3547</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:57</sys_updated_on>
+        <view_config display_value="Events Header Config">d8004f7c36233110ecb5796cd5b43c53</view_config>
+        <view_template_slot display_value="text_21">50004f7ccf2331103088e8b22fcce94e</view_template_slot>
+    </sys_sg_view_config_element>
+</record_update>

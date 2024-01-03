@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_workspace_declarative_action_exclusion">
+    <sys_workspace_declarative_action_exclusion action="INSERT_OR_UPDATE">
+        <action_assignment display_value="create-new-uxf">17c13e7273131010a0a79329faf6a794</action_assignment>
+        <exclude_all_child_tables>false</exclude_all_child_tables>
+        <exclude_self>true</exclude_self>
+        <sys_class_name>sys_workspace_declarative_action_exclusion</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:51:13</sys_created_on>
+        <sys_id>04000f7ca1233110ecac1c74af4fd2b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1107092_high_d_0_event_location</sys_name>
+        <sys_package display_value="High Desert Chess Club" source="x_1107092_high_d_0">44000f7cdb2331100aa512a1b45796b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_update_name>sys_workspace_declarative_action_exclusion_04000f7ca1233110ecac1c74af4fd2b2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:51:13</sys_updated_on>
+        <table>x_1107092_high_d_0_event_location</table>
+        <view/>
+    </sys_workspace_declarative_action_exclusion>
+</record_update>

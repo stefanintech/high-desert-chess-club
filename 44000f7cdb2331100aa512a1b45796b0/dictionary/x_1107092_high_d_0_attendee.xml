@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="c100cf7c93233110554df5f08bba100d" label="Attendee" max_length="40" name="x_1107092_high_d_0_attendee" text_index="true" type="collection">
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" default="javascript: gs.getUserID();" label="Attendee Name" mandatory="true" max_length="32" name="attendee_name" reference="sys_user" type="reference"/>
+        <element label="Attendee Notes" max_length="4000" name="attendee_notes" type="journal_input"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="pending_registration" label="Attendee Status" mandatory="true" max_length="40" name="attendee_status" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Processing Request" sequence="0" value="pending_registration"/>
+                <element inactive_on_update="false" label="Registration Confirmed" sequence="1" value="confirmed"/>
+                <element inactive_on_update="false" label="On Waitlist" sequence="2" value="waitlisted"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="3" value="cancelled"/>
+                <element inactive_on_update="false" label="Cancelled Waitlist" sequence="4" value="cancelled_waitlist"/>
+                <element inactive_on_update="false" label="Event ended" sequence="5" value="event_ended"/>
+                <element inactive_on_update="false" label="On hold" sequence="7" value="on_hold"/>
+                <element inactive_on_update="false" label="Event Cancelled" sequence="8" value="event_cancelled"/>
+                <element inactive_on_update="false" label="Not submitted" sequence="8" value="not_submitted"/>
+            </choice>
+        </element>
+        <element default="javascript:new GlideDateTime().getDisplayValue()" label="Date Submitted" mandatory="true" max_length="40" name="date_submitted" read_only="true" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Event Name" mandatory="true" max_length="32" name="event_name" reference="x_1107092_high_d_0_event" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Organizer Notes" max_length="4000" name="organizer_notes" type="journal_input"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
+        <index name="index">
+            <element name="attendee_name"/>
+        </index>
+        <index name="index2">
+            <element name="event_name"/>
+        </index>
+        <index name="index3">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_applet_launcher_m2m_section">
+    <sys_sg_applet_launcher_m2m_section action="INSERT_OR_UPDATE">
+        <applet_launcher display_value="Event Management">58004f7c5a233110fb8a7af42ed7a5a6</applet_launcher>
+        <order>10</order>
+        <section display_value="Events Created by Me">9c004f7cab233110b3a90f5ac1bd34a4</section>
+        <sys_class_name>sys_sg_applet_launcher_m2m_section</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:51:17</sys_created_on>
+        <sys_id>d8004f7ca52331101acedf19bd290ca4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="High Desert Chess Club" source="x_1107092_high_d_0">44000f7cdb2331100aa512a1b45796b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_update_name>sys_sg_applet_launcher_m2m_section_d8004f7ca52331101acedf19bd290ca4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:51:17</sys_updated_on>
+    </sys_sg_applet_launcher_m2m_section>
+</record_update>

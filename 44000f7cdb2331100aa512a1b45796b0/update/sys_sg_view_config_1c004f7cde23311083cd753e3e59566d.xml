@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_config">
+    <sys_sg_view_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced>false</advanced>
+        <description/>
+        <name>Upcoming Events View Config</name>
+        <scratchpad_script/>
+        <sys_class_name>sys_sg_view_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:51:11</sys_created_on>
+        <sys_id>1c004f7cde23311083cd753e3e59566d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Upcoming Events View Config</sys_name>
+        <sys_package display_value="High Desert Chess Club" source="x_1107092_high_d_0">44000f7cdb2331100aa512a1b45796b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_update_name>sys_sg_view_config_1c004f7cde23311083cd753e3e59566d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:51:11</sys_updated_on>
+        <table>x_1107092_high_d_0_event</table>
+        <template display_value="Upcoming Events Template">5c004f7c7b23311029a900c662632e54</template>
+    </sys_sg_view_config>
+    <sys_translated_text action="delete_multiple" query="documentkey=1c004f7cde23311083cd753e3e59566d"/>
+</record_update>

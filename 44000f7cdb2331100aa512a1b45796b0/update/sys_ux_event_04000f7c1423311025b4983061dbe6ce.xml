@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description/>
+        <event_name>LIST_CREATE_EVENT_DA_CLICKED</event_name>
+        <explicit_api_name/>
+        <interfaces/>
+        <label>List Create Event DA Clicked</label>
+        <props>[]</props>
+        <required_translations>[]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:48</sys_created_on>
+        <sys_id>04000f7c1423311025b4983061dbe6ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>List Create Event DA Clicked</sys_name>
+        <sys_package display_value="High Desert Chess Club" source="x_1107092_high_d_0">44000f7cdb2331100aa512a1b45796b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_update_name>sys_ux_event_04000f7c1423311025b4983061dbe6ce</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:48</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="delete_multiple" query="documentkey=04000f7c1423311025b4983061dbe6ce"/>
+</record_update>

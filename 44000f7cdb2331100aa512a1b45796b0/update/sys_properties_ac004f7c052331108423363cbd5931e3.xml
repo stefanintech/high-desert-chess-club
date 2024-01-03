@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Stores sys_id for default image in Attachment table. </description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_1107092_high_d_0.event_default_img</name>
+        <read_roles/>
+        <suffix>event_default_img</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:51:11</sys_created_on>
+        <sys_id>ac004f7c052331108423363cbd5931e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1107092_high_d_0.event_default_img</sys_name>
+        <sys_package display_value="High Desert Chess Club" source="x_1107092_high_d_0">44000f7cdb2331100aa512a1b45796b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_update_name>sys_properties_ac004f7c052331108423363cbd5931e3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:51:11</sys_updated_on>
+        <type>string</type>
+        <value>64008f7c6623311000c6e082490b657a</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=ac004f7c052331108423363cbd5931e3"/>
+</record_update>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1107092_high_d_0.EventRegistrationAjax</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>Called from client script (Get location info/Ensure End Date is after Start Date/Start date can't be in past)&#13;
+Used to verify that an event is not already scheduled at the selected location. </description>
+        <name>EventRegistrationAjax</name>
+        <script><![CDATA[var EventRegistrationAjax = Class.create();
+EventRegistrationAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getLocationData: function() {
+        //Call the utils script include and pass in the parameters below
+        var util = new x_1107092_high_d_0.EventRegistrationUtils();
+        var locationId = this.getParameter('sysparm_location_id');
+        var sysId = this.getParameter('sysparm_sys_id');
+        var start = this.getParameter('sysparm_start');
+        var end = this.getParameter('sysparm_end');
+
+		//Convert the display value of the start field which is in the user's timezone
+		//into a glide date time object in GMT, then pass the display of that to the script include
+		var gdtStart = new GlideDateTime(start);
+        var startTime = gdtStart.getTime(); //GMT time
+        var startTimeFormated = (startTime.getByFormat('hh:mm:ss'));
+		var startDate = gdtStart.getDate();
+        var generatedStartDate = gs.dateGenerate(startDate, startTimeFormated);
+		
+		//Convert the display value of the end field which is in the user's timezone
+		//into a glide date time object in GMT, then pass the display of that to the script include
+		var gdtEnd = new GlideDateTime(end);
+        var endTime = gdtEnd.getTime(); // GMT time
+        var endTimeFormated = (endTime.getByFormat('hh:mm:ss'));
+		var endDate = gdtEnd.getDate();
+        var generatedEndDate = gs.dateGenerate(endDate, endTimeFormated);
+		
+        return JSON.stringify(util.getLocationData(locationId, sysId, generatedStartDate, generatedEndDate));
+    },
+	
+	getLocationCapacity: function(){
+		//Call the utils script include and pass in the parameters below
+        var util = new x_1107092_high_d_0.EventRegistrationUtils();
+		var locationId = this.getParameter('sysparm_location_id');
+		return JSON.stringify(util.getLocationCapacity(locationId));
+	},
+
+    validEventDate: function() {
+        var validate = this.getParameter('sysparm_check');
+        var startDate = new GlideDateTime();
+		startDate.setDisplayValue(this.getParameter('sysparm_startDate'));
+        var endDate = new GlideDateTime();
+		endDate.setDisplayValue(this.getParameter('sysparm_endDate'));
+        var datetime = new GlideDateTime();
+        
+        if (validate == 'StartDate' && datetime.getNumericValue() > startDate.getNumericValue()) {
+            return JSON.stringify("startDateError1");
+        } else if (validate == 'StartDate' && endDate != "" && endDate.getNumericValue() < startDate.getNumericValue()) {
+            return JSON.stringify("startDateError2");
+        } else if (validate == 'EndDate' && datetime.getNumericValue() > endDate.getNumericValue()) {
+            return JSON.stringify("EndDateError");
+        } else if (validate == 'EndDate' && startDate != "" && endDate.getNumericValue() < startDate.getNumericValue()) {
+            return JSON.stringify("EndDateError");
+        }
+    },
+    
+    type: 'EventRegistrationAjax'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:51:07</sys_created_on>
+        <sys_id>20004f7c1323311007ef899ae09ccdd9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EventRegistrationAjax</sys_name>
+        <sys_package display_value="High Desert Chess Club" source="x_1107092_high_d_0">44000f7cdb2331100aa512a1b45796b0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_update_name>sys_script_include_20004f7c1323311007ef899ae09ccdd9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:51:07</sys_updated_on>
+    </sys_script_include>
+</record_update>

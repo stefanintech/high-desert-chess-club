@@ -1,0 +1,2564 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>This is a scheduled flow runs every 3 mins. This flow is responsible for processing all pending requests</description>
+        <internal_name>x_1107092_high_d_0.event_registration_pr</internal_name>
+        <label_cache>[{"name":"593fa564-cbb9-44ea-a15f-586f2005734d.__dont_treat_as_error__","label":"18 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"593fa564-cbb9-44ea-a15f-586f2005734d.__action_status__","label":"18 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c4e460fd-45a3-4f29-b844-ba8bf07e920c.__dont_treat_as_error__","label":"16 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c4e460fd-45a3-4f29-b844-ba8bf07e920c.__action_status__","label":"16 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4720e003-8c42-4069-af66-6192c1160347.__dont_treat_as_error__","label":"15 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4720e003-8c42-4069-af66-6192c1160347.__action_status__","label":"15 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"68cd7154-321c-4fb0-89fa-1586ad58432c.__dont_treat_as_error__","label":"14 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"68cd7154-321c-4fb0-89fa-1586ad58432c.__action_status__","label":"14 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"252eb305-412c-4972-8d4b-c0e2f17c4d99.__dont_treat_as_error__","label":"12 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"252eb305-412c-4972-8d4b-c0e2f17c4d99.__action_status__","label":"12 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dab8ff35-b2b3-419a-8769-2ad197b1b721.__dont_treat_as_error__","label":"11 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dab8ff35-b2b3-419a-8769-2ad197b1b721.__action_status__","label":"11 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ad238b0a-9194-44df-83fd-ffb5eba9c84c.__dont_treat_as_error__","label":"10 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ad238b0a-9194-44df-83fd-ffb5eba9c84c.__action_status__","label":"10 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"160013f7-3742-442c-b8e5-156b04cc941b.__dont_treat_as_error__","label":"8 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"160013f7-3742-442c-b8e5-156b04cc941b.__action_status__","label":"8 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a21f8907-515d-493d-8c0b-88048c166895.__dont_treat_as_error__","label":"7 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a21f8907-515d-493d-8c0b-88048c166895.__action_status__","label":"7 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a423b2e2-7036-40f3-ada5-f3d0f0dd4f5f.__dont_treat_as_error__","label":"6 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a423b2e2-7036-40f3-ada5-f3d0f0dd4f5f.__action_status__","label":"6 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dd21b77f-5642-4386-8b4f-7e0713c85575.__dont_treat_as_error__","label":"3 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dd21b77f-5642-4386-8b4f-7e0713c85575.__action_status__","label":"3 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9a179015-9a03-4201-a6e4-8f716e1f409c.__dont_treat_as_error__","label":"1 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9a179015-9a03-4201-a6e4-8f716e1f409c.__action_status__","label":"1 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"593fa564-cbb9-44ea-a15f-586f2005734d.table_name","label":"18 - Update Record➛Attendee Table","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"593fa564-cbb9-44ea-a15f-586f2005734d.record","label":"18 - Update Record➛Attendee Record","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c4e460fd-45a3-4f29-b844-ba8bf07e920c.table_name","label":"16 - Update Record➛Event Table","reference":"x_snc_event_reg_event","reference_display":"Event","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c4e460fd-45a3-4f29-b844-ba8bf07e920c.record","label":"16 - Update Record➛Event Record","reference":"x_snc_event_reg_event","reference_display":"Event","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4720e003-8c42-4069-af66-6192c1160347.Count","label":"15 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4720e003-8c42-4069-af66-6192c1160347.Table","label":"15 - Look Up Records➛Attendee Table","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4720e003-8c42-4069-af66-6192c1160347.Records","label":"15 - Look Up Records➛Attendee Records","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"68cd7154-321c-4fb0-89fa-1586ad58432c.table_name","label":"14 - Update Record➛Attendee Table","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"68cd7154-321c-4fb0-89fa-1586ad58432c.record","label":"14 - Update Record➛Attendee Record","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"252eb305-412c-4972-8d4b-c0e2f17c4d99.table_name","label":"12 - Update Record➛Event Table","reference":"x_snc_event_reg_event","reference_display":"Event","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"252eb305-412c-4972-8d4b-c0e2f17c4d99.record","label":"12 - Update Record➛Event Record","reference":"x_snc_event_reg_event","reference_display":"Event","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dab8ff35-b2b3-419a-8769-2ad197b1b721.Count","label":"11 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dab8ff35-b2b3-419a-8769-2ad197b1b721.Table","label":"11 - Look Up Records➛Attendee Table","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dab8ff35-b2b3-419a-8769-2ad197b1b721.Records","label":"11 - Look Up Records➛Attendee Records","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ad238b0a-9194-44df-83fd-ffb5eba9c84c.table_name","label":"10 - Update Record➛Attendee Table","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ad238b0a-9194-44df-83fd-ffb5eba9c84c.record","label":"10 - Update Record➛Attendee Record","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ee2aee8b-bda9-44d9-a905-778f6f21e179.item.waitlisted","label":"2 - For Each➛Event Record➛Waitlisted","reference":"","reference_display":"Waitlisted","type":"integer","base_type":"integer","parent_table_name":"x_snc_event_reg_event","column_name":"waitlisted"},{"name":"ee2aee8b-bda9-44d9-a905-778f6f21e179.item.waitlist_size","label":"2 - For Each➛Event Record➛Waitlist size","reference":"","reference_display":"Waitlist size","type":"integer","base_type":"integer","parent_table_name":"x_snc_event_reg_event","column_name":"waitlist_size"},{"name":"9a179015-9a03-4201-a6e4-8f716e1f409c.Records","label":"1 - Look Up Records➛Event Records","reference":"x_snc_event_reg_event","reference_display":"Event","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9a179015-9a03-4201-a6e4-8f716e1f409c.Table","label":"1 - Look Up Records➛Event Table","reference":"x_snc_event_reg_event","reference_display":"Event","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9a179015-9a03-4201-a6e4-8f716e1f409c.Count","label":"1 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c4cd40b3-480f-48a8-a523-a5cb83d59b6f.approval_state","label":"2➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ee2aee8b-bda9-44d9-a905-778f6f21e179.item","label":"2 - For Each➛Event Record","reference":"x_snc_event_reg_event","reference_display":"Event","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"dd21b77f-5642-4386-8b4f-7e0713c85575.Records","label":"3 - Look Up Records➛Attendee Records","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dd21b77f-5642-4386-8b4f-7e0713c85575.Table","label":"3 - Look Up Records➛Attendee Table","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dd21b77f-5642-4386-8b4f-7e0713c85575.Count","label":"3 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ee2aee8b-bda9-44d9-a905-778f6f21e179.item.sys_id","label":"2 - For Each➛Event Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_snc_event_reg_event","column_name":"sys_id"},{"name":"ee2aee8b-bda9-44d9-a905-778f6f21e179.item.capacity","label":"2 - For Each➛Event Record➛Capacity","reference":"","reference_display":"Capacity","type":"integer","base_type":"integer","parent_table_name":"x_snc_event_reg_event","column_name":"capacity"},{"name":"ee2aee8b-bda9-44d9-a905-778f6f21e179.item.attendees","label":"2 - For Each➛Event Record➛Attendees","reference":"","reference_display":"Attendees","type":"integer","base_type":"integer","parent_table_name":"x_snc_event_reg_event","column_name":"attendees"},{"name":"358ae1bf-30f4-4a2a-aeca-f023f4ee462e.item","label":"4 - For Each➛Attendee Record","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"a423b2e2-7036-40f3-ada5-f3d0f0dd4f5f.record","label":"6 - Update Record➛Attendee Record","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a423b2e2-7036-40f3-ada5-f3d0f0dd4f5f.table_name","label":"6 - Update Record➛Attendee Table","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a21f8907-515d-493d-8c0b-88048c166895.Records","label":"7 - Look Up Records➛Attendee Records","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a21f8907-515d-493d-8c0b-88048c166895.Table","label":"7 - Look Up Records➛Attendee Table","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a21f8907-515d-493d-8c0b-88048c166895.Count","label":"7 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"160013f7-3742-442c-b8e5-156b04cc941b.record","label":"8 - Update Record➛Event Record","reference":"x_snc_event_reg_event","reference_display":"Event","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"160013f7-3742-442c-b8e5-156b04cc941b.table_name","label":"8 - Update Record➛Event Table","reference":"x_snc_event_reg_event","reference_display":"Event","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>e8008f7c302331109e89daa7be68e52d</master_snapshot>
+        <name>Event Registration Process flow</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>24008f7cd9233110d4d66e81a5c6b92e</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ac008f7c93233110b3e2281704ca702d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Event Registration Process flow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="High Desert Chess Club" source="x_1107092_high_d_0">44000f7cdb2331100aa512a1b45796b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_update_name>sys_hub_flow_ac008f7c93233110b3e2281704ca702d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=ac008f7c93233110b3e2281704ca702d"/>
+    <sys_variable_value action="delete_multiple" query="document_key=ac008f7c93233110b3e2281704ca702d"/>
+    <sys_flow_timer_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <day_of_month>1</day_of_month>
+        <day_of_week/>
+        <name/>
+        <run_period>1970-01-01 00:03:00</run_period>
+        <run_start/>
+        <sys_class_name>sys_flow_timer_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>24008f7cd9233110d4d66e81a5c6b92e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <time/>
+        <timer_type>1</timer_type>
+    </sys_flow_timer_trigger>
+    <sys_flow_trigger_auto_script action="delete_multiple" query="name=Trigger:24008f7cd9233110d4d66e81a5c6b92e^sys_idNOT IN20008f7ccd233110fc4f748f939bc72d"/>
+    <sys_flow_trigger_auto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <max_drift/>
+        <name>Trigger:24008f7cd9233110d4d66e81a5c6b92e</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="">maint</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period>1970-01-01 00:03:00</run_period>
+        <run_start/>
+        <run_time/>
+        <run_type>periodically</run_type>
+        <script><![CDATA[sn_flow_trigger.FlowTriggerAPI.fireTimerTrigger('24008f7cd9233110d4d66e81a5c6b92e');]]></script>
+        <sys_class_name>sys_flow_trigger_auto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>20008f7ccd233110fc4f748f939bc72d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="High Desert Chess Club" source="x_1107092_high_d_0">44000f7cdb2331100aa512a1b45796b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <time_zone/>
+        <trigger display_value="">24008f7cd9233110d4d66e81a5c6b92e</trigger>
+        <upgrade_safe>true</upgrade_safe>
+    </sys_flow_trigger_auto_script>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=ac008f7c93233110b3e2281704ca702d"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=ac008f7c93233110b3e2281704ca702d^sys_idNOT INe8008f7c4a2331101dc32ff98d7c982b"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment>Runs every 3 minutes</comment>
+        <display_text/>
+        <flow display_value="Event Registration Process flow">ac008f7c93233110b3e2281704ca702d</flow>
+        <name>Repeat</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>e8008f7c4a2331101dc32ff98d7c982b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <trigger_definition display_value="Repeat">f63f0d94c32222002841b63b12d3aeed</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>repeat</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e8008f7c4a2331101dc32ff98d7c982b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>e8008f7c4a2331101dc32ff98d7c982b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>60008f7ca2233110f7a5be56273ef82c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>1970-01-01 00:03:00</value>
+        <variable display_value="Repeat">1c5f4d94c32222002841b63b12d3aeb3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_input_f63f0d94c32222002841b63b12d3aeed^id=e8008f7c4a2331101dc32ff98d7c982b"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=ac008f7c93233110b3e2281704ca702d"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=ac008f7c93233110b3e2281704ca702d^sys_idNOT IN24008f7c85233110a582a61edbb1692c"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>ac008f7c93233110b3e2281704ca702d</id>
+        <name>Event Registration Process</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>24008f7c85233110a582a61edbb1692c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=24008f7c85233110a582a61edbb1692c"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=ac008f7c93233110b3e2281704ca702d"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=ac008f7c93233110b3e2281704ca702d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ac008f7c93233110b3e2281704ca702d"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=ac008f7c93233110b3e2281704ca702d^sys_idNOT IN20008f7c1f233110cf78bbd6d8ec3a2a,24008f7cd523311089af907d0b97b329,28008f7cb223311037cef98367982a25,60008f7c1c233110902dd997275fa026,64008f7c802331106c8d44f65b814525,64008f7cf1233110b6bee04e8b30f62b,a4008f7c17233110dd3681fc67a46927,a8008f7c832331102279dc5356f3c82c,a8008f7cfd233110c7a4b9698c5c5629,ac008f7c98233110e692d668accae32b,e0008f7c662331101ab9c2a9ae88b827,e4008f7cc8233110dfeba9fc6d2e1523"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Event Registration Process flow">ac008f7c93233110b3e2281704ca702d</flow>
+        <order>8</order>
+        <parent_ui_id>b427a19d-8a79-4822-bd31-e060ac58f5d3</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>20008f7c1f233110cf78bbd6d8ec3a2a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:49</sys_updated_on>
+        <ui_id>160013f7-3742-442c-b8e5-156b04cc941b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=20008f7c1f233110cf78bbd6d8ec3a2a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>20008f7c1f233110cf78bbd6d8ec3a2a</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>a0008f7c472331107444f1151c12a32b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>x_1107092_high_d_0_event</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=20008f7c1f233110cf78bbd6d8ec3a2a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>20008f7c1f233110cf78bbd6d8ec3a2a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>2c008f7cb92331109357ca4cb7af112a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{ee2aee8b-bda9-44d9-a905-778f6f21e179.item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>20008f7c1f233110cf78bbd6d8ec3a2a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>a4008f7c462331103642c5da9124492a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>attendees={{a21f8907-515d-493d-8c0b-88048c166895.Count}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=20008f7c1f233110cf78bbd6d8ec3a2a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=20008f7c1f233110cf78bbd6d8ec3a2a"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Event Registration Process flow">ac008f7c93233110b3e2281704ca702d</flow>
+        <order>6</order>
+        <parent_ui_id>b427a19d-8a79-4822-bd31-e060ac58f5d3</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>24008f7cd523311089af907d0b97b329</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:49</sys_updated_on>
+        <ui_id>a423b2e2-7036-40f3-ada5-f3d0f0dd4f5f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=24008f7cd523311089af907d0b97b329"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>24008f7cd523311089af907d0b97b329</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>a0008f7cba23311018fb1027968adc28</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>attendee_status=confirmed</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>24008f7cd523311089af907d0b97b329</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>e4008f7cf42331100f44133accada129</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>x_1107092_high_d_0_attendee</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=24008f7cd523311089af907d0b97b329"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>24008f7cd523311089af907d0b97b329</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>e4008f7cf92331106ee41a2a2003c826</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{358ae1bf-30f4-4a2a-aeca-f023f4ee462e.item}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=24008f7cd523311089af907d0b97b329"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=24008f7cd523311089af907d0b97b329"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Event Registration Process flow">ac008f7c93233110b3e2281704ca702d</flow>
+        <order>7</order>
+        <parent_ui_id>b427a19d-8a79-4822-bd31-e060ac58f5d3</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>28008f7cb223311037cef98367982a25</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:49</sys_updated_on>
+        <ui_id>a21f8907-515d-493d-8c0b-88048c166895</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=28008f7cb223311037cef98367982a25"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>28008f7cb223311037cef98367982a25</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>20008f7c2c233110ad4cf52b1fb32924</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value/>
+        <variable display_value="Max Results">4f400a1587003300663ca1bb36cb0b61</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>28008f7cb223311037cef98367982a25</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>24008f7c29233110618f1826f1d23a23</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>number</value>
+        <variable display_value="Order by">c7400a1587003300663ca1bb36cb0b55</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>28008f7cb223311037cef98367982a25</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>e8008f7ca7233110c836ee07b0232225</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>x_1107092_high_d_0_attendee</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=28008f7cb223311037cef98367982a25"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>28008f7cb223311037cef98367982a25</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>28008f7c342331103a7fa1008b4be822</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>attendee_status=confirmed^event_name={{ee2aee8b-bda9-44d9-a905-778f6f21e179.item.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>max_results</field>
+        <id>28008f7cb223311037cef98367982a25</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>a8008f7cc62331102f0513d7ef8a7f23</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>{{ee2aee8b-bda9-44d9-a905-778f6f21e179.item.capacity}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=28008f7cb223311037cef98367982a25"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=28008f7cb223311037cef98367982a25"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Event Registration Process flow">ac008f7c93233110b3e2281704ca702d</flow>
+        <order>11</order>
+        <parent_ui_id>48dfd891-0497-48ab-a3d0-649ed41678e8</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>60008f7c1c233110902dd997275fa026</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:49</sys_updated_on>
+        <ui_id>dab8ff35-b2b3-419a-8769-2ad197b1b721</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=60008f7c1c233110902dd997275fa026"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>60008f7c1c233110902dd997275fa026</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>a4008f7c302331109110dfee0ad3c024</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>x_1107092_high_d_0_attendee</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>60008f7c1c233110902dd997275fa026</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>ec008f7c2f233110d437c814d8b25624</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value/>
+        <variable display_value="Max Results">4f400a1587003300663ca1bb36cb0b61</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=60008f7c1c233110902dd997275fa026"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>60008f7c1c233110902dd997275fa026</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>68008f7c912331109f057fa878337524</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>attendee_status=waitlisted^event_name={{ee2aee8b-bda9-44d9-a905-778f6f21e179.item.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>max_results</field>
+        <id>60008f7c1c233110902dd997275fa026</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>24008f7ca52331107d58118b93414926</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>{{ee2aee8b-bda9-44d9-a905-778f6f21e179.item.waitlist_size}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=60008f7c1c233110902dd997275fa026"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=60008f7c1c233110902dd997275fa026"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment>Look all published/re-scheduled events</comment>
+        <display_text/>
+        <flow display_value="Event Registration Process flow">ac008f7c93233110b3e2281704ca702d</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>64008f7c802331106c8d44f65b814525</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:49</sys_updated_on>
+        <ui_id>9a179015-9a03-4201-a6e4-8f716e1f409c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=64008f7c802331106c8d44f65b814525"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>64008f7c802331106c8d44f65b814525</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>2c008f7ce52331106379c3e3e11e4424</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>x_1107092_high_d_0_event</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>64008f7c802331106c8d44f65b814525</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>ac008f7ce72331103e35661268b03c25</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>number</value>
+        <variable display_value="Order by">c7400a1587003300663ca1bb36cb0b55</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b^id=64008f7c802331106c8d44f65b814525"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=64008f7c802331106c8d44f65b814525^sys_idNOT INa0008f7ce8233110cfc8c89d6b428525"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>conditions</input_name>
+        <instance>64008f7c802331106c8d44f65b814525</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"conditions":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n**\n**Requires GlideRecord encodedQuery response, example:\n**\"active\u003dtrue^short_descriptionSTARTSWITHtest\";\n*/\nreturn \"date_from\u003e\u003djavascript:gs.beginningOfToday()^stateIN1,2\";"}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>a0008f7ce8233110cfc8c89d6b428525</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=64008f7c802331106c8d44f65b814525"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Event Registration Process flow">ac008f7c93233110b3e2281704ca702d</flow>
+        <order>10</order>
+        <parent_ui_id>48dfd891-0497-48ab-a3d0-649ed41678e8</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>64008f7cf1233110b6bee04e8b30f62b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:49</sys_updated_on>
+        <ui_id>ad238b0a-9194-44df-83fd-ffb5eba9c84c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=64008f7cf1233110b6bee04e8b30f62b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>64008f7cf1233110b6bee04e8b30f62b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>6c008f7c12233110d18f0b9b1ec9f229</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>attendee_status=waitlisted</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>64008f7cf1233110b6bee04e8b30f62b</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>e8008f7c9f233110e56ccecd1eb7be28</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>x_1107092_high_d_0_attendee</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=64008f7cf1233110b6bee04e8b30f62b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>64008f7cf1233110b6bee04e8b30f62b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>28008f7c932331103c37d029a014ce28</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{358ae1bf-30f4-4a2a-aeca-f023f4ee462e.item}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=64008f7cf1233110b6bee04e8b30f62b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=64008f7cf1233110b6bee04e8b30f62b"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Event Registration Process flow">ac008f7c93233110b3e2281704ca702d</flow>
+        <order>14</order>
+        <parent_ui_id>bb9b45fd-b6ca-437a-a1a1-e30970bda7ae</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>a4008f7c17233110dd3681fc67a46927</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:49</sys_updated_on>
+        <ui_id>68cd7154-321c-4fb0-89fa-1586ad58432c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a4008f7c17233110dd3681fc67a46927"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a4008f7c17233110dd3681fc67a46927</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>2c008f7cc223311073ed044189280d27</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>x_1107092_high_d_0_attendee</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a4008f7c17233110dd3681fc67a46927</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>a8008f7cd7233110619f11f8dee55326</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>attendee_status=waitlisted</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a4008f7c17233110dd3681fc67a46927"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>a4008f7c17233110dd3681fc67a46927</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>20008f7c82233110ba86917b7a901027</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{358ae1bf-30f4-4a2a-aeca-f023f4ee462e.item}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a4008f7c17233110dd3681fc67a46927"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a4008f7c17233110dd3681fc67a46927"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment>Look for all pending attendees</comment>
+        <display_text/>
+        <flow display_value="Event Registration Process flow">ac008f7c93233110b3e2281704ca702d</flow>
+        <order>3</order>
+        <parent_ui_id>ee2aee8b-bda9-44d9-a905-778f6f21e179</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>a8008f7c832331102279dc5356f3c82c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:49</sys_updated_on>
+        <ui_id>dd21b77f-5642-4386-8b4f-7e0713c85575</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a8008f7c832331102279dc5356f3c82c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a8008f7c832331102279dc5356f3c82c</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>28008f7c9f23311059f546e27cda962b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>number</value>
+        <variable display_value="Order by">c7400a1587003300663ca1bb36cb0b55</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a8008f7c832331102279dc5356f3c82c</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>6c008f7c78233110191be9bf616b292c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>x_1107092_high_d_0_attendee</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a8008f7c832331102279dc5356f3c82c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>a8008f7c832331102279dc5356f3c82c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>e0008f7cbe23311070d49b8b19f2942d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>attendee_status=pending_registration^event_name={{ee2aee8b-bda9-44d9-a905-778f6f21e179.item.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a8008f7c832331102279dc5356f3c82c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a8008f7c832331102279dc5356f3c82c"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Event Registration Process flow">ac008f7c93233110b3e2281704ca702d</flow>
+        <order>16</order>
+        <parent_ui_id>bb9b45fd-b6ca-437a-a1a1-e30970bda7ae</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>a8008f7cfd233110c7a4b9698c5c5629</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:49</sys_updated_on>
+        <ui_id>c4e460fd-45a3-4f29-b844-ba8bf07e920c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a8008f7cfd233110c7a4b9698c5c5629"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a8008f7cfd233110c7a4b9698c5c5629</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>ac008f7c8923311084b755cebd266c28</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>x_1107092_high_d_0_event</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a8008f7cfd233110c7a4b9698c5c5629"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>a8008f7cfd233110c7a4b9698c5c5629</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>60008f7c71233110457f02a5a3773429</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{ee2aee8b-bda9-44d9-a905-778f6f21e179.item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>a8008f7cfd233110c7a4b9698c5c5629</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>64008f7c0c233110865e440a1cb07928</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>waitlisted={{4720e003-8c42-4069-af66-6192c1160347.Count}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a8008f7cfd233110c7a4b9698c5c5629"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a8008f7cfd233110c7a4b9698c5c5629"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Event Registration Process flow">ac008f7c93233110b3e2281704ca702d</flow>
+        <order>15</order>
+        <parent_ui_id>bb9b45fd-b6ca-437a-a1a1-e30970bda7ae</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>ac008f7c98233110e692d668accae32b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:49</sys_updated_on>
+        <ui_id>4720e003-8c42-4069-af66-6192c1160347</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ac008f7c98233110e692d668accae32b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ac008f7c98233110e692d668accae32b</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>e0008f7c762331104066e652403cf72a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>100000</value>
+        <variable display_value="Max Results">4f400a1587003300663ca1bb36cb0b61</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ac008f7c98233110e692d668accae32b</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>e4008f7cc6233110b13b94338928ef2c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>number</value>
+        <variable display_value="Order by">c7400a1587003300663ca1bb36cb0b55</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ac008f7c98233110e692d668accae32b</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>ec008f7c6a2331102e36c2b1ad38102a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>x_1107092_high_d_0_attendee</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ac008f7c98233110e692d668accae32b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>ac008f7c98233110e692d668accae32b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>68008f7cdd233110d008c740a491742a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>attendee_status=waitlisted^event_name={{ee2aee8b-bda9-44d9-a905-778f6f21e179.item.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ac008f7c98233110e692d668accae32b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ac008f7c98233110e692d668accae32b"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Event Registration Process flow">ac008f7c93233110b3e2281704ca702d</flow>
+        <order>12</order>
+        <parent_ui_id>48dfd891-0497-48ab-a3d0-649ed41678e8</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>e0008f7c662331101ab9c2a9ae88b827</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:49</sys_updated_on>
+        <ui_id>252eb305-412c-4972-8d4b-c0e2f17c4d99</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e0008f7c662331101ab9c2a9ae88b827"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e0008f7c662331101ab9c2a9ae88b827</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>68008f7c2b23311021ee59aa544d3427</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>x_1107092_high_d_0_event</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e0008f7c662331101ab9c2a9ae88b827"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>e0008f7c662331101ab9c2a9ae88b827</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>ec008f7c64233110704781f7c5598027</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{ee2aee8b-bda9-44d9-a905-778f6f21e179.item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>e0008f7c662331101ab9c2a9ae88b827</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>6c008f7c4b233110b010b8bf3ad03626</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>waitlisted={{dab8ff35-b2b3-419a-8769-2ad197b1b721.Count}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e0008f7c662331101ab9c2a9ae88b827"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e0008f7c662331101ab9c2a9ae88b827"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Event Registration Process flow">ac008f7c93233110b3e2281704ca702d</flow>
+        <order>18</order>
+        <parent_ui_id>78326d70-f7a3-4a35-8ad3-81a32d0abdb2</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>e4008f7cc8233110dfeba9fc6d2e1523</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:49</sys_updated_on>
+        <ui_id>593fa564-cbb9-44ea-a15f-586f2005734d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e4008f7cc8233110dfeba9fc6d2e1523"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e4008f7cc8233110dfeba9fc6d2e1523</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>6c008f7c99233110a5a3f2fd6c12a223</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>x_1107092_high_d_0_attendee</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e4008f7cc8233110dfeba9fc6d2e1523</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>e8008f7c58233110c520af9f2f17d222</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>attendee_status=on_hold</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e4008f7cc8233110dfeba9fc6d2e1523"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>e4008f7cc8233110dfeba9fc6d2e1523</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>e0008f7c832331100ebd3f4bf562d624</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{358ae1bf-30f4-4a2a-aeca-f023f4ee462e.item}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e4008f7cc8233110dfeba9fc6d2e1523"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e4008f7cc8233110dfeba9fc6d2e1523"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=ac008f7c93233110b3e2281704ca702d"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=ac008f7c93233110b3e2281704ca702d^sys_idNOT IN28008f7c4e233110453ce76ccf27fa1f,2c008f7c5823311073ec1a0281bed621,60008f7c192331100a85362e9c068e23,60008f7cde233110819f372bee359d20,64008f7cc42331105833c0f6402a5a22,6c008f7c712331109021c928cbcd6820"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ac008f7cc3233110c5152017e417a11f</block>
+        <comment/>
+        <connected_to>b427a19d-8a79-4822-bd31-e060ac58f5d3</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Event Registration Process flow">ac008f7c93233110b3e2281704ca702d</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>358ae1bf-30f4-4a2a-aeca-f023f4ee462e</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>28008f7c4e233110453ce76ccf27fa1f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <ui_id>48dfd891-0497-48ab-a3d0-649ed41678e8</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=28008f7c4e233110453ce76ccf27fa1f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>28008f7c4e233110453ce76ccf27fa1f</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>e8008f7ca7233110cc09e061a329d01f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>Waitlistsize is available</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=28008f7c4e233110453ce76ccf27fa1f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>28008f7c4e233110453ce76ccf27fa1f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>20008f7c4d2331105b6dd94f47f2a41f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{ee2aee8b-bda9-44d9-a905-778f6f21e179.item.waitlist_size}}&gt;{{ee2aee8b-bda9-44d9-a905-778f6f21e179.item.waitlisted}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=28008f7c4e233110453ce76ccf27fa1f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=28008f7c4e233110453ce76ccf27fa1f"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">e0008f7cc4233110fb413c31283b2221</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Event Registration Process flow">ac008f7c93233110b3e2281704ca702d</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>2c008f7c5823311073ec1a0281bed621</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <ui_id>ee2aee8b-bda9-44d9-a905-778f6f21e179</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=2c008f7c5823311073ec1a0281bed621"/>
+    <sys_element_mapping action="delete_multiple" query="id=2c008f7c5823311073ec1a0281bed621"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>2c008f7c5823311073ec1a0281bed621</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>a8008f7c82233110f000afeb6af71b20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{9a179015-9a03-4201-a6e4-8f716e1f409c.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=2c008f7c5823311073ec1a0281bed621"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2c008f7c5823311073ec1a0281bed621"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a0008f7c872331108ba50c5e59c16d22</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Event Registration Process flow">ac008f7c93233110b3e2281704ca702d</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>358ae1bf-30f4-4a2a-aeca-f023f4ee462e</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>60008f7c192331100a85362e9c068e23</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <ui_id>b427a19d-8a79-4822-bd31-e060ac58f5d3</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=60008f7c192331100a85362e9c068e23"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>60008f7c192331100a85362e9c068e23</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>a4008f7c4723311051aac0b62aeb7f21</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>Capacity is available </value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=60008f7c192331100a85362e9c068e23"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>60008f7c192331100a85362e9c068e23</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>24008f7c9823311075f7b54b0ba16620</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{ee2aee8b-bda9-44d9-a905-778f6f21e179.item.attendees}}&lt;{{ee2aee8b-bda9-44d9-a905-778f6f21e179.item.capacity}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=60008f7c192331100a85362e9c068e23"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=60008f7c192331100a85362e9c068e23"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ec008f7cc12331104bf4a800c80a4121</block>
+        <comment/>
+        <connected_to>b427a19d-8a79-4822-bd31-e060ac58f5d3</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Event Registration Process flow">ac008f7c93233110b3e2281704ca702d</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>13</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>358ae1bf-30f4-4a2a-aeca-f023f4ee462e</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>60008f7cde233110819f372bee359d20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <ui_id>bb9b45fd-b6ca-437a-a1a1-e30970bda7ae</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=60008f7cde233110819f372bee359d20"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>60008f7cde233110819f372bee359d20</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>e4008f7c582331104338c18c9e4fd620</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>Waitlistsize is -1</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=60008f7cde233110819f372bee359d20"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>60008f7cde233110819f372bee359d20</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>68008f7c832331100c612a3cebeed721</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{ee2aee8b-bda9-44d9-a905-778f6f21e179.item.waitlist_size}}=-1</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=60008f7cde233110819f372bee359d20"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=60008f7cde233110819f372bee359d20"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ac008f7c68233110f316f93821be3322</block>
+        <comment>Capacity and waitlist is not available</comment>
+        <connected_to>b427a19d-8a79-4822-bd31-e060ac58f5d3</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Event Registration Process flow">ac008f7c93233110b3e2281704ca702d</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>17</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>358ae1bf-30f4-4a2a-aeca-f023f4ee462e</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>64008f7cc42331105833c0f6402a5a22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <ui_id>78326d70-f7a3-4a35-8ad3-81a32d0abdb2</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=64008f7cc42331105833c0f6402a5a22"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=64008f7cc42331105833c0f6402a5a22"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=64008f7cc42331105833c0f6402a5a22"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">20008f7c53233110b8acf8d365dd7521</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Event Registration Process flow">ac008f7c93233110b3e2281704ca702d</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>ee2aee8b-bda9-44d9-a905-778f6f21e179</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>6c008f7c712331109021c928cbcd6820</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <ui_id>358ae1bf-30f4-4a2a-aeca-f023f4ee462e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=6c008f7c712331109021c928cbcd6820"/>
+    <sys_element_mapping action="delete_multiple" query="id=6c008f7c712331109021c928cbcd6820"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>6c008f7c712331109021c928cbcd6820</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>6c008f7c0e233110d37f11a5c7b4b11e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{dd21b77f-5642-4386-8b4f-7e0713c85575.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=6c008f7c712331109021c928cbcd6820"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6c008f7c712331109021c928cbcd6820"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=ac008f7c93233110b3e2281704ca702d"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=ac008f7c93233110b3e2281704ca702d"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_ac008f7c93233110b3e2281704ca702d"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_ac008f7c93233110b3e2281704ca702d"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_ac008f7c93233110b3e2281704ca702d"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_ac008f7c93233110b3e2281704ca702d"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>This is a scheduled flow runs every 3 mins. This flow is responsible for processing all pending requests</description>
+        <internal_name>x_1107092_high_d_0.event_registration_pr</internal_name>
+        <label_cache>[{"name":"593fa564-cbb9-44ea-a15f-586f2005734d.__dont_treat_as_error__","label":"18 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"593fa564-cbb9-44ea-a15f-586f2005734d.__action_status__","label":"18 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c4e460fd-45a3-4f29-b844-ba8bf07e920c.__dont_treat_as_error__","label":"16 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c4e460fd-45a3-4f29-b844-ba8bf07e920c.__action_status__","label":"16 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4720e003-8c42-4069-af66-6192c1160347.__dont_treat_as_error__","label":"15 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4720e003-8c42-4069-af66-6192c1160347.__action_status__","label":"15 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"68cd7154-321c-4fb0-89fa-1586ad58432c.__dont_treat_as_error__","label":"14 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"68cd7154-321c-4fb0-89fa-1586ad58432c.__action_status__","label":"14 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"252eb305-412c-4972-8d4b-c0e2f17c4d99.__dont_treat_as_error__","label":"12 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"252eb305-412c-4972-8d4b-c0e2f17c4d99.__action_status__","label":"12 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dab8ff35-b2b3-419a-8769-2ad197b1b721.__dont_treat_as_error__","label":"11 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dab8ff35-b2b3-419a-8769-2ad197b1b721.__action_status__","label":"11 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ad238b0a-9194-44df-83fd-ffb5eba9c84c.__dont_treat_as_error__","label":"10 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ad238b0a-9194-44df-83fd-ffb5eba9c84c.__action_status__","label":"10 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"160013f7-3742-442c-b8e5-156b04cc941b.__dont_treat_as_error__","label":"8 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"160013f7-3742-442c-b8e5-156b04cc941b.__action_status__","label":"8 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a21f8907-515d-493d-8c0b-88048c166895.__dont_treat_as_error__","label":"7 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a21f8907-515d-493d-8c0b-88048c166895.__action_status__","label":"7 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a423b2e2-7036-40f3-ada5-f3d0f0dd4f5f.__dont_treat_as_error__","label":"6 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a423b2e2-7036-40f3-ada5-f3d0f0dd4f5f.__action_status__","label":"6 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dd21b77f-5642-4386-8b4f-7e0713c85575.__dont_treat_as_error__","label":"3 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dd21b77f-5642-4386-8b4f-7e0713c85575.__action_status__","label":"3 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9a179015-9a03-4201-a6e4-8f716e1f409c.__dont_treat_as_error__","label":"1 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9a179015-9a03-4201-a6e4-8f716e1f409c.__action_status__","label":"1 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"593fa564-cbb9-44ea-a15f-586f2005734d.table_name","label":"18 - Update Record➛Attendee Table","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"593fa564-cbb9-44ea-a15f-586f2005734d.record","label":"18 - Update Record➛Attendee Record","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c4e460fd-45a3-4f29-b844-ba8bf07e920c.table_name","label":"16 - Update Record➛Event Table","reference":"x_snc_event_reg_event","reference_display":"Event","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c4e460fd-45a3-4f29-b844-ba8bf07e920c.record","label":"16 - Update Record➛Event Record","reference":"x_snc_event_reg_event","reference_display":"Event","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4720e003-8c42-4069-af66-6192c1160347.Count","label":"15 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4720e003-8c42-4069-af66-6192c1160347.Table","label":"15 - Look Up Records➛Attendee Table","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4720e003-8c42-4069-af66-6192c1160347.Records","label":"15 - Look Up Records➛Attendee Records","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"68cd7154-321c-4fb0-89fa-1586ad58432c.table_name","label":"14 - Update Record➛Attendee Table","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"68cd7154-321c-4fb0-89fa-1586ad58432c.record","label":"14 - Update Record➛Attendee Record","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"252eb305-412c-4972-8d4b-c0e2f17c4d99.table_name","label":"12 - Update Record➛Event Table","reference":"x_snc_event_reg_event","reference_display":"Event","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"252eb305-412c-4972-8d4b-c0e2f17c4d99.record","label":"12 - Update Record➛Event Record","reference":"x_snc_event_reg_event","reference_display":"Event","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dab8ff35-b2b3-419a-8769-2ad197b1b721.Count","label":"11 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dab8ff35-b2b3-419a-8769-2ad197b1b721.Table","label":"11 - Look Up Records➛Attendee Table","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dab8ff35-b2b3-419a-8769-2ad197b1b721.Records","label":"11 - Look Up Records➛Attendee Records","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ad238b0a-9194-44df-83fd-ffb5eba9c84c.table_name","label":"10 - Update Record➛Attendee Table","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ad238b0a-9194-44df-83fd-ffb5eba9c84c.record","label":"10 - Update Record➛Attendee Record","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ee2aee8b-bda9-44d9-a905-778f6f21e179.item.waitlisted","label":"2 - For Each➛Event Record➛Waitlisted","reference":"","reference_display":"Waitlisted","type":"integer","base_type":"integer","parent_table_name":"x_snc_event_reg_event","column_name":"waitlisted"},{"name":"ee2aee8b-bda9-44d9-a905-778f6f21e179.item.waitlist_size","label":"2 - For Each➛Event Record➛Waitlist size","reference":"","reference_display":"Waitlist size","type":"integer","base_type":"integer","parent_table_name":"x_snc_event_reg_event","column_name":"waitlist_size"},{"name":"9a179015-9a03-4201-a6e4-8f716e1f409c.Records","label":"1 - Look Up Records➛Event Records","reference":"x_snc_event_reg_event","reference_display":"Event","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9a179015-9a03-4201-a6e4-8f716e1f409c.Table","label":"1 - Look Up Records➛Event Table","reference":"x_snc_event_reg_event","reference_display":"Event","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9a179015-9a03-4201-a6e4-8f716e1f409c.Count","label":"1 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c4cd40b3-480f-48a8-a523-a5cb83d59b6f.approval_state","label":"2➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ee2aee8b-bda9-44d9-a905-778f6f21e179.item","label":"2 - For Each➛Event Record","reference":"x_snc_event_reg_event","reference_display":"Event","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"dd21b77f-5642-4386-8b4f-7e0713c85575.Records","label":"3 - Look Up Records➛Attendee Records","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dd21b77f-5642-4386-8b4f-7e0713c85575.Table","label":"3 - Look Up Records➛Attendee Table","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dd21b77f-5642-4386-8b4f-7e0713c85575.Count","label":"3 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ee2aee8b-bda9-44d9-a905-778f6f21e179.item.sys_id","label":"2 - For Each➛Event Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_snc_event_reg_event","column_name":"sys_id"},{"name":"ee2aee8b-bda9-44d9-a905-778f6f21e179.item.capacity","label":"2 - For Each➛Event Record➛Capacity","reference":"","reference_display":"Capacity","type":"integer","base_type":"integer","parent_table_name":"x_snc_event_reg_event","column_name":"capacity"},{"name":"ee2aee8b-bda9-44d9-a905-778f6f21e179.item.attendees","label":"2 - For Each➛Event Record➛Attendees","reference":"","reference_display":"Attendees","type":"integer","base_type":"integer","parent_table_name":"x_snc_event_reg_event","column_name":"attendees"},{"name":"358ae1bf-30f4-4a2a-aeca-f023f4ee462e.item","label":"4 - For Each➛Attendee Record","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"a423b2e2-7036-40f3-ada5-f3d0f0dd4f5f.record","label":"6 - Update Record➛Attendee Record","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a423b2e2-7036-40f3-ada5-f3d0f0dd4f5f.table_name","label":"6 - Update Record➛Attendee Table","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a21f8907-515d-493d-8c0b-88048c166895.Records","label":"7 - Look Up Records➛Attendee Records","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a21f8907-515d-493d-8c0b-88048c166895.Table","label":"7 - Look Up Records➛Attendee Table","reference":"x_snc_event_reg_attendee","reference_display":"Attendee","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a21f8907-515d-493d-8c0b-88048c166895.Count","label":"7 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"160013f7-3742-442c-b8e5-156b04cc941b.record","label":"8 - Update Record➛Event Record","reference":"x_snc_event_reg_event","reference_display":"Event","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"160013f7-3742-442c-b8e5-156b04cc941b.table_name","label":"8 - Update Record➛Event Table","reference":"x_snc_event_reg_event","reference_display":"Event","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Event Registration Process flow</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Event Registration Process flow">ac008f7c93233110b3e2281704ca702d</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e8008f7c302331109e89daa7be68e52d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="High Desert Chess Club" source="x_1107092_high_d_0">44000f7cdb2331100aa512a1b45796b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=e8008f7c302331109e89daa7be68e52d"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e8008f7c302331109e89daa7be68e52d"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=e8008f7c302331109e89daa7be68e52d^sys_idNOT IN60008f7c1f2331100443c9457737ea1e"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment>Runs every 3 minutes</comment>
+        <display_text/>
+        <flow display_value="Event Registration Process flow">e8008f7c302331109e89daa7be68e52d</flow>
+        <name>Repeat</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>60008f7c1f2331100443c9457737ea1e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <trigger_definition display_value="Repeat">f63f0d94c32222002841b63b12d3aeed</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>repeat</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=60008f7c1f2331100443c9457737ea1e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>60008f7c1f2331100443c9457737ea1e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>24008f7c132331103dc0341ac087951e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>1970-01-01 00:03:00</value>
+        <variable display_value="Repeat">1c5f4d94c32222002841b63b12d3aeb3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_input_f63f0d94c32222002841b63b12d3aeed^id=60008f7c1f2331100443c9457737ea1e"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=e8008f7c302331109e89daa7be68e52d"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=e8008f7c302331109e89daa7be68e52d^sys_idNOT IN28008f7cbf233110c64bb62b714be51d"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>e8008f7c302331109e89daa7be68e52d</id>
+        <name>Event Registration Process flow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>28008f7cbf233110c64bb62b714be51d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=28008f7cbf233110c64bb62b714be51d"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=e8008f7c302331109e89daa7be68e52d"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=e8008f7c302331109e89daa7be68e52d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e8008f7c302331109e89daa7be68e52d"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=e8008f7c302331109e89daa7be68e52d^sys_idNOT IN28008f7c97233110be4ea4629a699917,60008f7c662331107864d5f84e02d415,60008f7c8a2331101682e75156c8d01b,64008f7c2e2331102a419d2af1efcb17,6c008f7cb62331100bf59b45dc0e5218,6c008f7cfc233110b9cfbd13782e9215,a0008f7c272331109994e9b8cbffed1d,a4008f7c222331109345108c8d540919,a8008f7c04233110a3e67a68720ced1b,ac008f7cd22331103a0a39aeb15e8e17,e8008f7c98233110b8451d085f63ff1a,ec008f7ce12331101712bc70999bfd1c"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Event Registration Process flow">e8008f7c302331109e89daa7be68e52d</flow>
+        <order>14</order>
+        <parent_ui_id>bb9b45fd-b6ca-437a-a1a1-e30970bda7ae</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>28008f7c97233110be4ea4629a699917</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <ui_id>68cd7154-321c-4fb0-89fa-1586ad58432c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=28008f7c97233110be4ea4629a699917"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>28008f7c97233110be4ea4629a699917</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>68008f7ce92331102e521880bd0dca16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>attendee_status=waitlisted</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>28008f7c97233110be4ea4629a699917</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>a0008f7c7f23311002f5e52422a8ee17</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>x_1107092_high_d_0_attendee</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=28008f7c97233110be4ea4629a699917"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>28008f7c97233110be4ea4629a699917</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>e8008f7cd4233110e5b99971d27ea117</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{358ae1bf-30f4-4a2a-aeca-f023f4ee462e.item}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=28008f7c97233110be4ea4629a699917"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=28008f7c97233110be4ea4629a699917"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Event Registration Process flow">e8008f7c302331109e89daa7be68e52d</flow>
+        <order>8</order>
+        <parent_ui_id>b427a19d-8a79-4822-bd31-e060ac58f5d3</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>60008f7c662331107864d5f84e02d415</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <ui_id>160013f7-3742-442c-b8e5-156b04cc941b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=60008f7c662331107864d5f84e02d415"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>60008f7c662331107864d5f84e02d415</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>e0008f7c27233110c40480eabe1a0c16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>x_1107092_high_d_0_event</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=60008f7c662331107864d5f84e02d415"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>60008f7c662331107864d5f84e02d415</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>a8008f7c7623311024e20563d6464215</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{ee2aee8b-bda9-44d9-a905-778f6f21e179.item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>60008f7c662331107864d5f84e02d415</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>24008f7ccc23311019b5fdc421929315</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>attendees={{a21f8907-515d-493d-8c0b-88048c166895.Count}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=60008f7c662331107864d5f84e02d415"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=60008f7c662331107864d5f84e02d415"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Event Registration Process flow">e8008f7c302331109e89daa7be68e52d</flow>
+        <order>6</order>
+        <parent_ui_id>b427a19d-8a79-4822-bd31-e060ac58f5d3</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>60008f7c8a2331101682e75156c8d01b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <ui_id>a423b2e2-7036-40f3-ada5-f3d0f0dd4f5f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=60008f7c8a2331101682e75156c8d01b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>60008f7c8a2331101682e75156c8d01b</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>ac008f7cf0233110f6a89ab75bdd381a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>x_1107092_high_d_0_attendee</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>60008f7c8a2331101682e75156c8d01b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>e4008f7ce62331102f282d5b1e3db01b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>attendee_status=confirmed</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=60008f7c8a2331101682e75156c8d01b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>60008f7c8a2331101682e75156c8d01b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>20008f7cef2331104fea324644ec1b1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{358ae1bf-30f4-4a2a-aeca-f023f4ee462e.item}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=60008f7c8a2331101682e75156c8d01b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=60008f7c8a2331101682e75156c8d01b"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Event Registration Process flow">e8008f7c302331109e89daa7be68e52d</flow>
+        <order>12</order>
+        <parent_ui_id>48dfd891-0497-48ab-a3d0-649ed41678e8</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>64008f7c2e2331102a419d2af1efcb17</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <ui_id>252eb305-412c-4972-8d4b-c0e2f17c4d99</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=64008f7c2e2331102a419d2af1efcb17"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>64008f7c2e2331102a419d2af1efcb17</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>2c008f7c0823311093e312824eee9816</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>x_1107092_high_d_0_event</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=64008f7c2e2331102a419d2af1efcb17"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>64008f7c2e2331102a419d2af1efcb17</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>20008f7ca323311033c2b2ddb1bd1616</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{ee2aee8b-bda9-44d9-a905-778f6f21e179.item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>64008f7c2e2331102a419d2af1efcb17</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>e4008f7c062331108a2a72178714de15</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>waitlisted={{dab8ff35-b2b3-419a-8769-2ad197b1b721.Count}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=64008f7c2e2331102a419d2af1efcb17"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=64008f7c2e2331102a419d2af1efcb17"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Event Registration Process flow">e8008f7c302331109e89daa7be68e52d</flow>
+        <order>18</order>
+        <parent_ui_id>78326d70-f7a3-4a35-8ad3-81a32d0abdb2</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>6c008f7cb62331100bf59b45dc0e5218</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <ui_id>593fa564-cbb9-44ea-a15f-586f2005734d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=6c008f7cb62331100bf59b45dc0e5218"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>6c008f7cb62331100bf59b45dc0e5218</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>68008f7cfa233110f84325f72892e419</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>x_1107092_high_d_0_attendee</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>6c008f7cb62331100bf59b45dc0e5218</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>ec008f7c792331106c1c65ab4676d216</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>attendee_status=on_hold</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=6c008f7cb62331100bf59b45dc0e5218"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>6c008f7cb62331100bf59b45dc0e5218</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>a4008f7c48233110d65702fb16fbf416</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{358ae1bf-30f4-4a2a-aeca-f023f4ee462e.item}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6c008f7cb62331100bf59b45dc0e5218"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6c008f7cb62331100bf59b45dc0e5218"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Event Registration Process flow">e8008f7c302331109e89daa7be68e52d</flow>
+        <order>16</order>
+        <parent_ui_id>bb9b45fd-b6ca-437a-a1a1-e30970bda7ae</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>6c008f7cfc233110b9cfbd13782e9215</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <ui_id>c4e460fd-45a3-4f29-b844-ba8bf07e920c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=6c008f7cfc233110b9cfbd13782e9215"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>6c008f7cfc233110b9cfbd13782e9215</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>a4008f7cde23311022f082d2cc504413</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>x_1107092_high_d_0_event</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=6c008f7cfc233110b9cfbd13782e9215"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>6c008f7cfc233110b9cfbd13782e9215</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>e0008f7c622331100f11eb36df25cf13</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{ee2aee8b-bda9-44d9-a905-778f6f21e179.item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>6c008f7cfc233110b9cfbd13782e9215</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>28008f7c9e233110b0db6b26fba27214</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>waitlisted={{4720e003-8c42-4069-af66-6192c1160347.Count}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6c008f7cfc233110b9cfbd13782e9215"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6c008f7cfc233110b9cfbd13782e9215"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Event Registration Process flow">e8008f7c302331109e89daa7be68e52d</flow>
+        <order>15</order>
+        <parent_ui_id>bb9b45fd-b6ca-437a-a1a1-e30970bda7ae</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>a0008f7c272331109994e9b8cbffed1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <ui_id>4720e003-8c42-4069-af66-6192c1160347</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a0008f7c272331109994e9b8cbffed1d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a0008f7c272331109994e9b8cbffed1d</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>64008f7ca0233110d89872a20e0cdd1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>number</value>
+        <variable display_value="Order by">c7400a1587003300663ca1bb36cb0b55</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a0008f7c272331109994e9b8cbffed1d</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>68008f7c8b233110ddcfc23668073c1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>x_1107092_high_d_0_attendee</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a0008f7c272331109994e9b8cbffed1d</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>e4008f7c7823311096da69270a1b9b1e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>100000</value>
+        <variable display_value="Max Results">4f400a1587003300663ca1bb36cb0b61</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a0008f7c272331109994e9b8cbffed1d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>a0008f7c272331109994e9b8cbffed1d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>ac008f7c2d233110db7a7a63644c351d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>attendee_status=waitlisted^event_name={{ee2aee8b-bda9-44d9-a905-778f6f21e179.item.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a0008f7c272331109994e9b8cbffed1d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a0008f7c272331109994e9b8cbffed1d"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Event Registration Process flow">e8008f7c302331109e89daa7be68e52d</flow>
+        <order>10</order>
+        <parent_ui_id>48dfd891-0497-48ab-a3d0-649ed41678e8</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>a4008f7c222331109345108c8d540919</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <ui_id>ad238b0a-9194-44df-83fd-ffb5eba9c84c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a4008f7c222331109345108c8d540919"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a4008f7c222331109345108c8d540919</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>a8008f7ca9233110e333746c6e7c6218</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>attendee_status=waitlisted</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a4008f7c222331109345108c8d540919</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>ec008f7c98233110baf3c6001848bf19</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>x_1107092_high_d_0_attendee</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a4008f7c222331109345108c8d540919"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>a4008f7c222331109345108c8d540919</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>20008f7c2423311037193529e73fe019</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{358ae1bf-30f4-4a2a-aeca-f023f4ee462e.item}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a4008f7c222331109345108c8d540919"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a4008f7c222331109345108c8d540919"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Event Registration Process flow">e8008f7c302331109e89daa7be68e52d</flow>
+        <order>11</order>
+        <parent_ui_id>48dfd891-0497-48ab-a3d0-649ed41678e8</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>a8008f7c04233110a3e67a68720ced1b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <ui_id>dab8ff35-b2b3-419a-8769-2ad197b1b721</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a8008f7c04233110a3e67a68720ced1b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a8008f7c04233110a3e67a68720ced1b</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>6c008f7c0e2331106e7502ce3883671b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>x_1107092_high_d_0_attendee</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a8008f7c04233110a3e67a68720ced1b</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>a0008f7c0d233110cd48a46ca938b01a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value/>
+        <variable display_value="Max Results">4f400a1587003300663ca1bb36cb0b61</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a8008f7c04233110a3e67a68720ced1b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>a8008f7c04233110a3e67a68720ced1b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>24008f7ca0233110197bd24bbe3b8718</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>attendee_status=waitlisted^event_name={{ee2aee8b-bda9-44d9-a905-778f6f21e179.item.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>max_results</field>
+        <id>a8008f7c04233110a3e67a68720ced1b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>e0008f7c0923311090cfc1fb69c3a119</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>{{ee2aee8b-bda9-44d9-a905-778f6f21e179.item.waitlist_size}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a8008f7c04233110a3e67a68720ced1b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a8008f7c04233110a3e67a68720ced1b"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment>Look for all pending attendees</comment>
+        <display_text/>
+        <flow display_value="Event Registration Process flow">e8008f7c302331109e89daa7be68e52d</flow>
+        <order>3</order>
+        <parent_ui_id>ee2aee8b-bda9-44d9-a905-778f6f21e179</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>ac008f7cd22331103a0a39aeb15e8e17</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <ui_id>dd21b77f-5642-4386-8b4f-7e0713c85575</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ac008f7cd22331103a0a39aeb15e8e17"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ac008f7cd22331103a0a39aeb15e8e17</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>2c008f7cdd2331109d193456f9a55419</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>number</value>
+        <variable display_value="Order by">c7400a1587003300663ca1bb36cb0b55</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ac008f7cd22331103a0a39aeb15e8e17</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>60008f7cfa23311042fd964fa7fb2418</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>x_1107092_high_d_0_attendee</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ac008f7cd22331103a0a39aeb15e8e17"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>ac008f7cd22331103a0a39aeb15e8e17</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>e4008f7c44233110c55085baf3112718</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>attendee_status=pending_registration^event_name={{ee2aee8b-bda9-44d9-a905-778f6f21e179.item.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ac008f7cd22331103a0a39aeb15e8e17"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ac008f7cd22331103a0a39aeb15e8e17"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment>Look all published/re-scheduled events</comment>
+        <display_text/>
+        <flow display_value="Event Registration Process flow">e8008f7c302331109e89daa7be68e52d</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>e8008f7c98233110b8451d085f63ff1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <ui_id>9a179015-9a03-4201-a6e4-8f716e1f409c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e8008f7c98233110b8451d085f63ff1a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e8008f7c98233110b8451d085f63ff1a</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>24008f7c49233110157d3afe2f3dd21b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>number</value>
+        <variable display_value="Order by">c7400a1587003300663ca1bb36cb0b55</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e8008f7c98233110b8451d085f63ff1a</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>64008f7c95233110700ccb39362b2a1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>x_1107092_high_d_0_event</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b^id=e8008f7c98233110b8451d085f63ff1a"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e8008f7c98233110b8451d085f63ff1a^sys_idNOT IN28008f7c34233110b0c1685b605c101a"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>conditions</input_name>
+        <instance>e8008f7c98233110b8451d085f63ff1a</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"conditions":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n**\n**Requires GlideRecord encodedQuery response, example:\n**\"active\u003dtrue^short_descriptionSTARTSWITHtest\";\n*/\nreturn \"date_from\u003e\u003djavascript:gs.beginningOfToday()^stateIN1,2\";"}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>28008f7c34233110b0c1685b605c101a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e8008f7c98233110b8451d085f63ff1a"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Event Registration Process flow">e8008f7c302331109e89daa7be68e52d</flow>
+        <order>7</order>
+        <parent_ui_id>b427a19d-8a79-4822-bd31-e060ac58f5d3</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>ec008f7ce12331101712bc70999bfd1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <ui_id>a21f8907-515d-493d-8c0b-88048c166895</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ec008f7ce12331101712bc70999bfd1c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ec008f7ce12331101712bc70999bfd1c</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>a4008f7c3623311068d7bc965fea401c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>x_1107092_high_d_0_attendee</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ec008f7ce12331101712bc70999bfd1c</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>a8008f7c50233110831bf6994166c41e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value/>
+        <variable display_value="Max Results">4f400a1587003300663ca1bb36cb0b61</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ec008f7ce12331101712bc70999bfd1c</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>e8008f7c49233110a16f2d309f3e871d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>number</value>
+        <variable display_value="Order by">c7400a1587003300663ca1bb36cb0b55</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ec008f7ce12331101712bc70999bfd1c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>ec008f7ce12331101712bc70999bfd1c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>2c008f7cad233110a32de874b81f471c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>attendee_status=confirmed^event_name={{ee2aee8b-bda9-44d9-a905-778f6f21e179.item.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>max_results</field>
+        <id>ec008f7ce12331101712bc70999bfd1c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>e0008f7c93233110627d8f87c7d1901c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>{{ee2aee8b-bda9-44d9-a905-778f6f21e179.item.capacity}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ec008f7ce12331101712bc70999bfd1c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ec008f7ce12331101712bc70999bfd1c"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=e8008f7c302331109e89daa7be68e52d"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=e8008f7c302331109e89daa7be68e52d^sys_idNOT IN60008f7cc4233110c8c495487dfcb212,68008f7c502331106debabc934922e13,a0008f7cb52331105660cddd0bbe5814,a8008f7ca123311074d82c4bb5d46d12,ac008f7c0a2331107581761657c13814,e4008f7ca32331104d8cf3520501e712"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ac008f7c68233110f316f93821be3322</block>
+        <comment>Capacity and waitlist is not available</comment>
+        <connected_to>b427a19d-8a79-4822-bd31-e060ac58f5d3</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Event Registration Process flow">e8008f7c302331109e89daa7be68e52d</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>17</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>358ae1bf-30f4-4a2a-aeca-f023f4ee462e</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>60008f7cc4233110c8c495487dfcb212</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <ui_id>78326d70-f7a3-4a35-8ad3-81a32d0abdb2</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=60008f7cc4233110c8c495487dfcb212"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=60008f7cc4233110c8c495487dfcb212"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=60008f7cc4233110c8c495487dfcb212"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ac008f7cc3233110c5152017e417a11f</block>
+        <comment/>
+        <connected_to>b427a19d-8a79-4822-bd31-e060ac58f5d3</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Event Registration Process flow">e8008f7c302331109e89daa7be68e52d</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>358ae1bf-30f4-4a2a-aeca-f023f4ee462e</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>68008f7c502331106debabc934922e13</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <ui_id>48dfd891-0497-48ab-a3d0-649ed41678e8</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=68008f7c502331106debabc934922e13"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>68008f7c502331106debabc934922e13</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>ec008f7cfa2331102c51a83540d82713</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>Waitlistsize is available</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=68008f7c502331106debabc934922e13"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>68008f7c502331106debabc934922e13</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>64008f7c5f233110d557f75f5c95c214</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{ee2aee8b-bda9-44d9-a905-778f6f21e179.item.waitlist_size}}&gt;{{ee2aee8b-bda9-44d9-a905-778f6f21e179.item.waitlisted}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=68008f7c502331106debabc934922e13"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=68008f7c502331106debabc934922e13"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a0008f7c872331108ba50c5e59c16d22</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Event Registration Process flow">e8008f7c302331109e89daa7be68e52d</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>358ae1bf-30f4-4a2a-aeca-f023f4ee462e</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>a0008f7cb52331105660cddd0bbe5814</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <ui_id>b427a19d-8a79-4822-bd31-e060ac58f5d3</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=a0008f7cb52331105660cddd0bbe5814"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>a0008f7cb52331105660cddd0bbe5814</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>2c008f7ce4233110a55882ee63cf3413</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>Capacity is available </value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a0008f7cb52331105660cddd0bbe5814"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>a0008f7cb52331105660cddd0bbe5814</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>e8008f7c722331102983a26e020dac14</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{ee2aee8b-bda9-44d9-a905-778f6f21e179.item.attendees}}&lt;{{ee2aee8b-bda9-44d9-a905-778f6f21e179.item.capacity}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=a0008f7cb52331105660cddd0bbe5814"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a0008f7cb52331105660cddd0bbe5814"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ec008f7cc12331104bf4a800c80a4121</block>
+        <comment/>
+        <connected_to>b427a19d-8a79-4822-bd31-e060ac58f5d3</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Event Registration Process flow">e8008f7c302331109e89daa7be68e52d</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>13</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>358ae1bf-30f4-4a2a-aeca-f023f4ee462e</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>a8008f7ca123311074d82c4bb5d46d12</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <ui_id>bb9b45fd-b6ca-437a-a1a1-e30970bda7ae</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=a8008f7ca123311074d82c4bb5d46d12"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>a8008f7ca123311074d82c4bb5d46d12</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>20008f7c2023311043d2ca2aa9ab8a13</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <value>Waitlistsize is -1</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a8008f7ca123311074d82c4bb5d46d12"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>a8008f7ca123311074d82c4bb5d46d12</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>6c008f7cd62331108ac158126e8b3812</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{ee2aee8b-bda9-44d9-a905-778f6f21e179.item.waitlist_size}}=-1</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=a8008f7ca123311074d82c4bb5d46d12"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a8008f7ca123311074d82c4bb5d46d12"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">20008f7c53233110b8acf8d365dd7521</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Event Registration Process flow">e8008f7c302331109e89daa7be68e52d</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>ee2aee8b-bda9-44d9-a905-778f6f21e179</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>ac008f7c0a2331107581761657c13814</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <ui_id>358ae1bf-30f4-4a2a-aeca-f023f4ee462e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=ac008f7c0a2331107581761657c13814"/>
+    <sys_element_mapping action="delete_multiple" query="id=ac008f7c0a2331107581761657c13814"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>ac008f7c0a2331107581761657c13814</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>ac008f7ccc233110d8f132eb24403511</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{dd21b77f-5642-4386-8b4f-7e0713c85575.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=ac008f7c0a2331107581761657c13814"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ac008f7c0a2331107581761657c13814"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">e0008f7cc4233110fb413c31283b2221</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Event Registration Process flow">e8008f7c302331109e89daa7be68e52d</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>e4008f7ca32331104d8cf3520501e712</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <ui_id>ee2aee8b-bda9-44d9-a905-778f6f21e179</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=e4008f7ca32331104d8cf3520501e712"/>
+    <sys_element_mapping action="delete_multiple" query="id=e4008f7ca32331104d8cf3520501e712"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>e4008f7ca32331104d8cf3520501e712</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_id>24008f7c862331103517bb7180c2d612</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{9a179015-9a03-4201-a6e4-8f716e1f409c.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=e4008f7ca32331104d8cf3520501e712"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e4008f7ca32331104d8cf3520501e712"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=e8008f7c302331109e89daa7be68e52d"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=e8008f7c302331109e89daa7be68e52d"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_e8008f7c302331109e89daa7be68e52d"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_e8008f7c302331109e89daa7be68e52d"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_e8008f7c302331109e89daa7be68e52d"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_e8008f7c302331109e89daa7be68e52d"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>ac008f7c93233110b3e2281704ca702d</sys_id>
+        <latest_snapshot>e8008f7c302331109e89daa7be68e52d</latest_snapshot>
+        <compiler_build>glide-vancouver-07-06-2023__patch2-hotfix1-10-04-2023_10-06-2023_1235.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=ac008f7c93233110b3e2281704ca702d^sys_idNOT INe0008f7c4e2331105a36e9dbf156d81f"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"e0008f7c4e2331105a36e9dbf156d81f","name":"plan","plan_signature":null}}</plan>
+        <plan_id>ac008f7c93233110b3e2281704ca702d</plan_id>
+        <snapshot>c30083bc93233110554df5f08bba10bf</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e0008f7c4e2331105a36e9dbf156d81f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:42</sys_updated_on>
+        <trigger display_value="">24008f7cd9233110d4d66e81a5c6b92e</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=ac008f7c93233110b3e2281704ca702d"/>
+</record_update>

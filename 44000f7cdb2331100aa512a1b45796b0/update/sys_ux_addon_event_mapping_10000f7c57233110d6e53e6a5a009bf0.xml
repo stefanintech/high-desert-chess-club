@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_addon_event_mapping">
+    <sys_ux_addon_event_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <controller/>
+        <description>Reference Search field decorator wired to Standard Record Page's Open Modal</description>
+        <name>Record Page Tabs Reference Search</name>
+        <parent_macroponent display_value="Record">1c000f7c91233110179c73dd015c91f0</parent_macroponent>
+        <source_component/>
+        <source_da display_value="ref_search">c6542741ff13101035be517f793bf1bb</source_da>
+        <source_element_id>record_tabs_1</source_element_id>
+        <sys_class_name>sys_ux_addon_event_mapping</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:51:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>10000f7c57233110d6e53e6a5a009bf0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record Page Tabs Reference Search</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="High Desert Chess Club" source="x_1107092_high_d_0">44000f7cdb2331100aa512a1b45796b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_update_name>sys_ux_addon_event_mapping_10000f7c57233110d6e53e6a5a009bf0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:51:11</sys_updated_on>
+        <target_event display_value="[Record Page] Open modal">509663140f0310107d20409dc4767e00</target_event>
+        <target_payload_mapping>{&#13;
+	  "type": "MAP_CONTAINER",&#13;
+	  "container": {&#13;
+		"route": {&#13;
+		  "type": "JSON_LITERAL",&#13;
+		  "value": "modal_ref_lookup"&#13;
+		},&#13;
+		"size": {&#13;
+		  "type": "JSON_LITERAL", &#13;
+		  "value": "lg"&#13;
+		},&#13;
+		"fields": {&#13;
+		  "type": "MAP_CONTAINER",&#13;
+		  "container": {&#13;
+			"table": {&#13;
+			  "type": "EVENT_PAYLOAD_BINDING",&#13;
+			  "binding": {&#13;
+				"address": ["parentTable"]&#13;
+			  }&#13;
+			},&#13;
+			"sysId": {&#13;
+			  "type": "EVENT_PAYLOAD_BINDING",&#13;
+			  "binding": {&#13;
+				"address": ["parentSysId"]&#13;
+			  }&#13;
+			},&#13;
+			"size": {&#13;
+			  "type": "JSON_LITERAL",&#13;
+			  "value": "md"&#13;
+			},&#13;
+			"referenceField": {&#13;
+			  "type": "EVENT_PAYLOAD_BINDING",&#13;
+			  "binding": {&#13;
+				"address": ["referenceField"]&#13;
+			  }&#13;
+			},&#13;
+			"label": {&#13;
+			  "type": "EVENT_PAYLOAD_BINDING",&#13;
+			  "binding": {&#13;
+				"address": ["fieldLabel"]&#13;
+			  }&#13;
+			},&#13;
+			"serializedChanges": {&#13;
+						"type": "EVENT_PAYLOAD_BINDING",&#13;
+						"binding": {&#13;
+							"address": [&#13;
+								"serializedChanges"&#13;
+							]&#13;
+						}&#13;
+					},&#13;
+			  "encodedRecord": {&#13;
+						"type": "EVENT_PAYLOAD_BINDING",&#13;
+						"binding": {&#13;
+							"address": [&#13;
+								"encodedRecord"&#13;
+							]&#13;
+						}&#13;
+					}&#13;
+		  }&#13;
+		},&#13;
+		"params": {&#13;
+		  "type": "JSON_LITERAL",&#13;
+		  "value": {}&#13;
+		}&#13;
+	  }&#13;
+	}</target_payload_mapping>
+    </sys_ux_addon_event_mapping>
+</record_update>

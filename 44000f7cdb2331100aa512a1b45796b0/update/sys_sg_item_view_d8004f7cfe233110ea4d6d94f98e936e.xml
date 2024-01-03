@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_view">
+    <sys_sg_item_view action="INSERT_OR_UPDATE">
+        <data_item/>
+        <dependency_fields>attendee_status-43046,number-3907,attendee_name.name-22124</dependency_fields>
+        <item_view_json>{"Type":"ViewGroup","Margin":{"Top":15,"Bottom":17},"Orientation":"Vertical","Alignment":"Stretch","Distribution":"Auto","Children":[{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Auto","Children":[{"Type":"ViewGroup","Id":42845,"Orientation":"Vertical","Alignment":"Left","Distribution":"Equal","Children":[{"Type":"ViewGroup","CornerRadius":2,"BackgroundColor":"#f1f1f1","Height":20,"Orientation":"Horizontal","Alignment":"Center","Distribution":"Auto","Children":[{"Type":"Text","Margin":{"Left":8},"TextColor":"#333e3f","TextAlignment":"Right","studio_ignore":true,"MaxLines":1,"Font":{"Weight":"regular","Size":10,"Name":"Font Awesome 5 Pro Regular"},"Id":43045},{"Type":"Text","studio_template_field_id":"E1","Margin":{"Left":6,"Right":8,"Top":3,"Bottom":3},"Text":"","CellId":"attendee_status","TextColor":"#333e3f","TextAlignment":"Left","MaxLines":1,"Font":{"Weight":"regular","Size":13},"Id":43046}],"Id":3484}]},{"Type":"ViewGroup","Orientation":"Vertical","Alignment":"Right","Distribution":"Equal","Children":[{"Type":"Text","studio_template_field_id":"E2","Id":3907,"Text":"","CellId":"number","TextColor":"#637274","TextAlignment":"Right","MaxLines":1,"Font":{"Weight":"regular","Size":13}}],"Id":42846}],"Id":12259},{"Type":"Text","studio_template_field_id":"E3","Margin":{"Top":10},"Id":22124,"CellId":"attendee_name.name","TextColor":"#333e3f","TextAlignment":"Left","MaxLines":2,"Font":{"Weight":"regular","Size":18}},{"Type":"ViewGroup","Orientation":"Vertical","Alignment":"Left","Distribution":"Equal","Children":[{"Type":"ViewGroup","Margin":{"Top":9},"Orientation":"Horizontal","Alignment":"Center","Distribution":"Auto","Children":[{"Type":"Text","studio_template_field_id":"E4","TextColor":"#7d8a8c","TextAlignment":"Left","MaxLines":1,"Font":{"Weight":"regular","Size":13},"Id":3091},{"Type":"Text","studio_ignore":true,"Margin":{"Left":8,"Right":8},"Width":1,"Height":12,"BackgroundColor":"#7d8a8c","TextColor":"#7d8a8c","TextAlignment":"center","Font":{"Weight":"regular","Size":13},"Id":3092},{"Type":"Text","studio_template_field_id":"E5","TextColor":"#7d8a8c","TextAlignment":"Left","MaxLines":1,"Font":{"Weight":"regular","Size":13},"Id":3093}],"Id":34348}],"Id":12261},{"Type":"ViewGroup","Orientation":"Vertical","Alignment":"Left","Distribution":"Auto","Margin":{"Top":4},"Children":[{"Type":"Text","studio_template_field_id":"E6","TextColor":"#7d8a8c","TextAlignment":"Left","MaxLines":1,"Font":{"Weight":"regular","Size":13},"Id":7685}],"Id":12262}],"Id":28090,"studio_card_id":"a813ac880f000010c46f5cbac4767e17"}</item_view_json>
+        <name>Event Attendee List Header Item View</name>
+        <short_description/>
+        <sys_class_name>sys_sg_item_view</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:51</sys_created_on>
+        <sys_id>d8004f7cfe233110ea4d6d94f98e936e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Event Attendee List Header Item View</sys_name>
+        <sys_package display_value="High Desert Chess Club" source="x_1107092_high_d_0">44000f7cdb2331100aa512a1b45796b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_update_name>sys_sg_item_view_d8004f7cfe233110ea4d6d94f98e936e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:51</sys_updated_on>
+        <table>x_1107092_high_d_0_attendee</table>
+        <ui_styles/>
+    </sys_sg_item_view>
+    <sys_translated_text action="delete_multiple" query="documentkey=d8004f7cfe233110ea4d6d94f98e936e"/>
+</record_update>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_graphql">
+    <sys_ux_data_broker_graphql action="INSERT_OR_UPDATE">
+        <api_name>x_1107092_high_d_0.Upcoming Events GraphQL</api_name>
+        <description>Gets the next three published or rescheduled events starting today or later</description>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Upcoming Events GraphQL</name>
+        <output_schema/>
+        <private>false</private>
+        <props/>
+        <query>{&#13;
+  GlideRecord_Query {&#13;
+    x_1107092_high_d_0_event(queryConditions: "stateIN1,2^date_from&gt;=javascript:gs.beginningOfToday()^published&gt;=javascript:gs.beginningOfLast3Months()^ORDERBYDESCpublished", pagination:{limit:5}) {&#13;
+      _results {&#13;
+        sys_id {&#13;
+          value&#13;
+        }&#13;
+        event_name{&#13;
+          value&#13;
+        }&#13;
+        attendees {&#13;
+          value&#13;
+        }&#13;
+        date_from {&#13;
+          value&#13;
+          displayValue&#13;
+        }&#13;
+location {&#13;
+          value&#13;
+          displayValue&#13;
+        }&#13;
+       capacity{&#13;
+          value&#13;
+        }&#13;
+       spaces_left{&#13;
+          value&#13;
+        }&#13;
+sys_class_name{&#13;
+          value&#13;
+        }&#13;
+      }&#13;
+    }&#13;
+  }&#13;
+}</query>
+        <required_translations>[]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[(function buildQuery(query, inputs) { 
+         var qb = new GraphQLQueryBuilder(query, inputs);
+   // return appropriate query here
+    return qb; 
+   })(query, inputs);]]></script>
+        <sys_class_name>sys_ux_data_broker_graphql</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:58</sys_created_on>
+        <sys_id>08000f7c792331105a0227547014a4d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Upcoming Events GraphQL</sys_name>
+        <sys_package display_value="High Desert Chess Club" source="x_1107092_high_d_0">44000f7cdb2331100aa512a1b45796b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_update_name>sys_ux_data_broker_graphql_08000f7c792331105a0227547014a4d0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:58</sys_updated_on>
+        <type>query</type>
+        <use_record_domain>false</use_record_domain>
+    </sys_ux_data_broker_graphql>
+    <sys_translated_text action="delete_multiple" query="documentkey=08000f7c792331105a0227547014a4d0"/>
+</record_update>

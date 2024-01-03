@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_data_item">
+    <sys_sg_data_item action="INSERT_OR_UPDATE">
+        <condition_type>declarative</condition_type>
+        <description>List of All Events Available</description>
+        <group_by/>
+        <instance_relative_url_qc/>
+        <name>All Events DI</name>
+        <offline_query_condition/>
+        <offline_query_condition_script/>
+        <query_condition table="x_1107092_high_d_0_event">stateIN1,2^date_to&gt;=javascript:gs.beginningOfToday()^EQ^ORDERBYdate_from<item display_value="1,2" endquery="false" field="state" goto="false" newquery="false" operator="IN" or="false" value="1,2"/>
+            <item endquery="false" field="date_to" goto="false" newquery="false" operator="&gt;=" or="false" value="javascript:gs.beginningOfToday()"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+            <item endquery="false" field="" goto="false" newquery="false" operator="ORDERBY" or="false" value="date_from"/>
+        </query_condition>
+        <query_condition_script/>
+        <sys_class_name>sys_sg_data_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:51:10</sys_created_on>
+        <sys_id>94004f7c8323311086c3a428d4031d9a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>All Events DI</sys_name>
+        <sys_package display_value="High Desert Chess Club" source="x_1107092_high_d_0">44000f7cdb2331100aa512a1b45796b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_update_name>sys_sg_data_item_94004f7c8323311086c3a428d4031d9a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:51:10</sys_updated_on>
+        <table>x_1107092_high_d_0_event</table>
+    </sys_sg_data_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=94004f7c8323311086c3a428d4031d9a"/>
+</record_update>

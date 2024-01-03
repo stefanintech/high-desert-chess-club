@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_button_instance">
+    <sys_sg_button_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <button display_value="Cancel Event">98004f7c2b2331109379990d49f916a2</button>
+        <color_theme>destructive</color_theme>
+        <description/>
+        <disable_offline>false</disable_offline>
+        <field_name/>
+        <icon/>
+        <label>Cancel Event</label>
+        <location>footer</location>
+        <name>Cancel Event</name>
+        <order>20</order>
+        <parent>9c004f7c66233110ffcb86b20a60fd9e</parent>
+        <parent_table>sys_sg_screen</parent_table>
+        <sys_class_name>sys_sg_button_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:51:15</sys_created_on>
+        <sys_id>90004f7c7c233110c39a2fd4afdadc9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cancel Event</sys_name>
+        <sys_package display_value="High Desert Chess Club" source="x_1107092_high_d_0">44000f7cdb2331100aa512a1b45796b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_update_name>sys_sg_button_instance_90004f7c7c233110c39a2fd4afdadc9e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:51:15</sys_updated_on>
+        <table>x_1107092_high_d_0_event</table>
+    </sys_sg_button_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=90004f7c7c233110c39a2fd4afdadc9e"/>
+</record_update>
