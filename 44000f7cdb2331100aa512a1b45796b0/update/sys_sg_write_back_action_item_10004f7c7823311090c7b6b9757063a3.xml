@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_write_back_action_item">
+    <sys_sg_write_back_action_item action="INSERT_OR_UPDATE">
+        <description/>
+        <execution_script><![CDATA[(function WriteBackAction(input) {
+	//Type appropriate comment here, and begin script below
+	var current = new GlideRecord('x_1107092_high_d_0_event');
+	if(current.get(input.sys_id)){
+		current.state = '10';
+		current.work_notes = gs.getMessage('Event cancelled by {0}', gs.getUser().getDisplayName());
+		current.update();
+	}
+
+
+})(input);]]></execution_script>
+        <name>Cancel Event</name>
+        <parameter_screen/>
+        <query_condition/>
+        <sys_class_name>sys_sg_write_back_action_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:43</sys_created_on>
+        <sys_id>10004f7c7823311090c7b6b9757063a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cancel Event</sys_name>
+        <sys_package display_value="High Desert Chess Club" source="x_1107092_high_d_0">44000f7cdb2331100aa512a1b45796b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_update_name>sys_sg_write_back_action_item_10004f7c7823311090c7b6b9757063a3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:43</sys_updated_on>
+        <table>x_1107092_high_d_0_event</table>
+        <template/>
+        <type>script</type>
+        <use_current_record_as_condition>true</use_current_record_as_condition>
+        <use_fields_for_ref_lookup>false</use_fields_for_ref_lookup>
+    </sys_sg_write_back_action_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=10004f7c7823311090c7b6b9757063a3"/>
+</record_update>

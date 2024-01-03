@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <name>highlightedValueConfigId</name>
+        <page display_value="High Desert Chess Club Workspace">e8008f7c242331104c1b8bb7fd123483</page>
+        <required_translations>[]</required_translations>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>0c000f7cb02331106ef5ef187e03f1c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>highlightedValueConfigId</sys_name>
+        <sys_package display_value="High Desert Chess Club" source="x_1107092_high_d_0">44000f7cdb2331100aa512a1b45796b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_update_name>sys_ux_page_property_0c000f7cb02331106ef5ef187e03f1c6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:43</sys_updated_on>
+        <type>string</type>
+        <unique_name>x_1107092_high_d_0.e8008f7c242331104c1b8bb7fd123483.root.highlightedValueConfigId</unique_name>
+        <value>08000f7cd123311060804869170504ca</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=0c000f7cb02331106ef5ef187e03f1c6"/>
+</record_update>

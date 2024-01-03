@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Comments and Work Notes" section_id="98004f7cba23311029f4a0b87fbd3d0d" sys_domain="global" table="x_1107092_high_d_0_event" version="3" view="workspace">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>comments</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-03 05:50:55</sys_created_on>
+            <sys_id>d0000f7c18233110de1e379f011680f3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Comments and Work Notes" display_value="Comments and Work Notes" name="x_1107092_high_d_0_event" sys_domain="global" view="4736b0a03cb1311068bcf327dfe37f81">98004f7cba23311029f4a0b87fbd3d0d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-03 05:50:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>work_notes</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-03 05:50:55</sys_created_on>
+            <sys_id>58000f7c96233110112487f601407ff3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Comments and Work Notes" display_value="Comments and Work Notes" name="x_1107092_high_d_0_event" sys_domain="global" view="4736b0a03cb1311068bcf327dfe37f81">98004f7cba23311029f4a0b87fbd3d0d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-03 05:50:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>activity.xml</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-03 05:50:55</sys_created_on>
+            <sys_id>94000f7c56233110d1b356e8c488e1f3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="">d8004f7cdf233110ae99303756b73900</sys_ui_formatter>
+            <sys_ui_section caption="Comments and Work Notes" display_value="Comments and Work Notes" name="x_1107092_high_d_0_event" sys_domain="global" view="4736b0a03cb1311068bcf327dfe37f81">98004f7cba23311029f4a0b87fbd3d0d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-03 05:50:55</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Comments and Work Notes</caption>
+            <header>false</header>
+            <name>x_1107092_high_d_0_event</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-03 05:50:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>98004f7cba23311029f4a0b87fbd3d0d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1107092_high_d_0_event</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="High Desert Chess Club" source="x_1107092_high_d_0">44000f7cdb2331100aa512a1b45796b0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+            <sys_update_name>sys_ui_section_98004f7cba23311029f4a0b87fbd3d0d</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-03 05:50:55</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Workspace" name="workspace">4736b0a03cb1311068bcf327dfe37f81</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

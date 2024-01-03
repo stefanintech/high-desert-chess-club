@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Used for the  workspace view to provide a clean record view without duplicate comments and worknotes sections.</description>
+        <field>attendees</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Hide logs section for workspace</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+ g_form.setSectionDisplay('comments_andworknotes', false);
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ec004f7cc52331108dcca847d85684da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Hide logs section for workspace</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="High Desert Chess Club" source="x_1107092_high_d_0">44000f7cdb2331100aa512a1b45796b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_update_name>sys_script_client_ec004f7cc52331108dcca847d85684da</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:55</sys_updated_on>
+        <table>x_1107092_high_d_0_event</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view>workspace</view>
+    </sys_script_client>
+</record_update>

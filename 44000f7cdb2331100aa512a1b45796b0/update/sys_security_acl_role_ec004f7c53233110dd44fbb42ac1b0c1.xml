@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:51:17</sys_created_on>
+        <sys_id>ec004f7c53233110dd44fbb42ac1b0c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>60004f7c7f233110fb72bdc82881edc8.x_1107092_high_d_0.event_reg.attendee</sys_name>
+        <sys_package display_value="High Desert Chess Club" source="x_1107092_high_d_0">44000f7cdb2331100aa512a1b45796b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_security_acl display_value="60004f7c7f233110fb72bdc82881edc8">e0004f7cf4233110d7943d496cfa67c9</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_ec004f7c53233110dd44fbb42ac1b0c1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:51:17</sys_updated_on>
+        <sys_user_role display_value="x_1107092_high_d_0.event_reg.attendee" name="x_1107092_high_d_0.event_reg.attendee">20008f7c03233110c10d96fd3d3dcf84</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

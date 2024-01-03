@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="54004f7c462331100ac34fde99039f0c" sys_domain="global" table="x_1107092_high_d_0_event_location" version="3" view="workspace">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-03 05:50:55</sys_created_on>
+            <sys_id>98000f7cef2331106183233a323c03fe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1107092_high_d_0_event_location" sys_domain="global" view="4736b0a03cb1311068bcf327dfe37f81">54004f7c462331100ac34fde99039f0c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-03 05:50:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>address</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-03 05:50:55</sys_created_on>
+            <sys_id>90000f7c6b2331103e304ebde0af62fd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1107092_high_d_0_event_location" sys_domain="global" view="4736b0a03cb1311068bcf327dfe37f81">54004f7c462331100ac34fde99039f0c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-03 05:50:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-03 05:50:55</sys_created_on>
+            <sys_id>5c000f7c302331102f68f0d8cd474afe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1107092_high_d_0_event_location" sys_domain="global" view="4736b0a03cb1311068bcf327dfe37f81">54004f7c462331100ac34fde99039f0c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-03 05:50:55</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-03 05:50:55</sys_created_on>
+            <sys_id>d4000f7c4d23311020955ebb64729ffe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1107092_high_d_0_event_location" sys_domain="global" view="4736b0a03cb1311068bcf327dfe37f81">54004f7c462331100ac34fde99039f0c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-03 05:50:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-03 05:50:55</sys_created_on>
+            <sys_id>50000f7ce22331107d9f3bbe15599afe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1107092_high_d_0_event_location" sys_domain="global" view="4736b0a03cb1311068bcf327dfe37f81">54004f7c462331100ac34fde99039f0c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-03 05:50:55</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>capacity</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-03 05:50:55</sys_created_on>
+            <sys_id>54000f7c48233110bef0ea91a6daaefd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1107092_high_d_0_event_location" sys_domain="global" view="4736b0a03cb1311068bcf327dfe37f81">54004f7c462331100ac34fde99039f0c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-03 05:50:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-03 05:50:55</sys_created_on>
+            <sys_id>58000f7c3f2331107e3e77c38461f7fc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1107092_high_d_0_event_location" sys_domain="global" view="4736b0a03cb1311068bcf327dfe37f81">54004f7c462331100ac34fde99039f0c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-03 05:50:55</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-03 05:50:55</sys_created_on>
+            <sys_id>1c000f7c6e233110682f2484c70113fc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1107092_high_d_0_event_location" sys_domain="global" view="4736b0a03cb1311068bcf327dfe37f81">54004f7c462331100ac34fde99039f0c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-03 05:50:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_1107092_high_d_0_event_location</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-03 05:50:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>54004f7c462331100ac34fde99039f0c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1107092_high_d_0_event_location</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="High Desert Chess Club" source="x_1107092_high_d_0">44000f7cdb2331100aa512a1b45796b0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+            <sys_update_name>sys_ui_section_54004f7c462331100ac34fde99039f0c</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-03 05:50:55</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Workspace" name="workspace">4736b0a03cb1311068bcf327dfe37f81</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

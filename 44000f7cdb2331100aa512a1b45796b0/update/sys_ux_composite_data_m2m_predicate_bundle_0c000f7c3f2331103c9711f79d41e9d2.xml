@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data_m2m_predicate_bundle">
+    <sys_ux_composite_data_m2m_predicate_bundle action="INSERT_OR_UPDATE">
+        <dataset display_value="Event Registration all event card">94000f7cbb23311062a78e1e7f8b23d5</dataset>
+        <order>50</order>
+        <predicate_bundle display_value="Event Registration all event card">88000f7cd023311097a8e67f4d5f59d1</predicate_bundle>
+        <sys_class_name>sys_ux_composite_data_m2m_predicate_bundle</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:51:03</sys_created_on>
+        <sys_id>0c000f7c3f2331103c9711f79d41e9d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="High Desert Chess Club" source="x_1107092_high_d_0">44000f7cdb2331100aa512a1b45796b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_update_name>sys_ux_composite_data_m2m_predicate_bundle_0c000f7c3f2331103c9711f79d41e9d2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:51:03</sys_updated_on>
+    </sys_ux_composite_data_m2m_predicate_bundle>
+</record_update>

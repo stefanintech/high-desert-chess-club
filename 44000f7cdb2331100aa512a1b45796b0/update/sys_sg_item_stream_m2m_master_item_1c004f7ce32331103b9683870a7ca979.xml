@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_stream_m2m_master_item">
+    <sys_sg_item_stream_m2m_master_item action="INSERT_OR_UPDATE">
+        <item_stream display_value="All Events Copy Item Stream">14004f7c89233110a721bb5b7202d584</item_stream>
+        <master_item display_value="All Events Copy Master Item">94004f7c48233110e58c1e0a82292279</master_item>
+        <sys_class_name>sys_sg_item_stream_m2m_master_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:51:00</sys_created_on>
+        <sys_id>1c004f7ce32331103b9683870a7ca979</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="High Desert Chess Club" source="x_1107092_high_d_0">44000f7cdb2331100aa512a1b45796b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_update_name>sys_sg_item_stream_m2m_master_item_1c004f7ce32331103b9683870a7ca979</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:51:00</sys_updated_on>
+    </sys_sg_item_stream_m2m_master_item>
+</record_update>

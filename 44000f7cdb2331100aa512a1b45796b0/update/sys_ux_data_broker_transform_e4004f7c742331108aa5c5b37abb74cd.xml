@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_1107092_high_d_0.Event Reg Breadcrumb broker</api_name>
+        <description>Used to populate the breadcrumbs component of portal</description>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Event Reg Breadcrumb broker</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[&#13;
+  {&#13;
+    "name": "displayValue",&#13;
+    "label": "Display value",&#13;
+    "fieldType": "string",&#13;
+    "valueType": "object",&#13;
+    "readOnly": false,&#13;
+    "mandatory": true,&#13;
+    "description": "Breadcrumb default value"&#13;
+  }&#13;
+]</props>
+        <required_translations>[{"message":"Breadcrumb default value","comment":""},{"message":"Display value","comment":""}]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+	var homeMsg = gs.getMessage('Home');
+	var homeItem = {"label":homeMsg,"icon":"","hideLabel":false};
+    var itemValue = input.displayValue || "";
+    return [homeItem , {"label":itemValue}];
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:51:07</sys_created_on>
+        <sys_id>e4004f7c742331108aa5c5b37abb74cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Event Reg Breadcrumb broker</sys_name>
+        <sys_package display_value="High Desert Chess Club" source="x_1107092_high_d_0">44000f7cdb2331100aa512a1b45796b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_e4004f7c742331108aa5c5b37abb74cd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:51:07</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="delete_multiple" query="documentkey=e4004f7c742331108aa5c5b37abb74cd"/>
+</record_update>

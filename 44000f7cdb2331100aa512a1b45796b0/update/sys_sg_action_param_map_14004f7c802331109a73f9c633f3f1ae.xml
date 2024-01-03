@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_action_param_map">
+    <sys_sg_action_param_map action="INSERT_OR_UPDATE">
+        <button display_value="Create Event">e0004f7cfd233110f0104265f2178cb2</button>
+        <item_parameter display_value="Capacity">d0004f7c2e233110cdeab9d37afe55ac</item_parameter>
+        <sys_class_name>sys_sg_action_param_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:51:02</sys_created_on>
+        <sys_id>14004f7c802331109a73f9c633f3f1ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>d0004f7c2e233110cdeab9d37afe55ac</sys_name>
+        <sys_package display_value="High Desert Chess Club" source="x_1107092_high_d_0">44000f7cdb2331100aa512a1b45796b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_update_name>sys_sg_action_param_map_14004f7c802331109a73f9c633f3f1ae</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:51:02</sys_updated_on>
+        <ui_parameter display_value="Capacity">90004f7cf42331102ff7da4e0e5aeaad</ui_parameter>
+    </sys_sg_action_param_map>
+</record_update>

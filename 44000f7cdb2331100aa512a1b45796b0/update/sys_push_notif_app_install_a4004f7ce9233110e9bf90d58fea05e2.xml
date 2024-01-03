@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_push_notif_app_install">
+    <sys_push_notif_app_install action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <last_registered_on>2021-01-11 20:48:01</last_registered_on>
+        <send_badge_count>false</send_badge_count>
+        <sys_class_name>sys_push_notif_app_install</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:51:05</sys_created_on>
+        <sys_id>a4004f7ce9233110e9bf90d58fea05e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>7710EEBB72BCCB6EFA29EFF216730C9A8B87070DD0A26D9A0B3E4C783EB55934</sys_name>
+        <sys_package display_value="High Desert Chess Club" source="x_1107092_high_d_0">44000f7cdb2331100aa512a1b45796b0</sys_package>
+        <sys_policy/>
+        <sys_push_application_id display_value="ServiceNow Request Application">ac7f61d273122300d63a566a4cf6a78b</sys_push_application_id>
+        <sys_push_platform_id display_value="Apple">20e71f30ff0002009738ffffffffff6b</sys_push_platform_id>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_update_name>sys_push_notif_app_install_a4004f7ce9233110e9bf90d58fea05e2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:51:05</sys_updated_on>
+        <sys_user_id display_value="">cf9384f6dbc8e01047124c9b0b9619f8</sys_user_id>
+        <token>7710EEBB72BCCB6EFA29EFF216730C9A8B87070DD0A26D9A0B3E4C783EB55934</token>
+    </sys_push_notif_app_install>
+</record_update>

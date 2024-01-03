@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_action_param_map">
+    <sys_sg_action_param_map action="INSERT_OR_UPDATE">
+        <button display_value="Create Event">e0004f7cfd233110f0104265f2178cb2</button>
+        <item_parameter display_value="Starts">18004f7ca2233110e97fa488344fd1ad</item_parameter>
+        <sys_class_name>sys_sg_action_param_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:51:09</sys_created_on>
+        <sys_id>10004f7c0c233110923050b558f888ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>18004f7ca2233110e97fa488344fd1ad</sys_name>
+        <sys_package display_value="High Desert Chess Club" source="x_1107092_high_d_0">44000f7cdb2331100aa512a1b45796b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_update_name>sys_sg_action_param_map_10004f7c0c233110923050b558f888ac</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:51:09</sys_updated_on>
+        <ui_parameter display_value="Starts">58004f7c7a23311067ddeea7843bc4ac</ui_parameter>
+    </sys_sg_action_param_map>
+</record_update>

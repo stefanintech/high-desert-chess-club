@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="50004f7cef23311012f2f7bc28270710" sys_domain="global" table="x_1107092_high_d_0_event" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-03 05:50:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>90004f7cb3233110191b10609085730f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1107092_high_d_0_event" name="x_1107092_high_d_0_event" sys_domain="global" view="4736b0a03cb1311068bcf327dfe37f81">50004f7cef23311012f2f7bc28270710</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_1107092_high_d_0_event" sys_domain="global" view="4736b0a03cb1311068bcf327dfe37f81">9c004f7cb2233110d518c8862ff3bc0f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-03 05:50:47</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-03 05:50:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>dc004f7cf5233110877f1b3246dd7e0e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1107092_high_d_0_event" name="x_1107092_high_d_0_event" sys_domain="global" view="4736b0a03cb1311068bcf327dfe37f81">50004f7cef23311012f2f7bc28270710</sys_ui_form>
+            <sys_ui_section caption="Location details" display_value="Location details" name="x_1107092_high_d_0_event" sys_domain="global" view="4736b0a03cb1311068bcf327dfe37f81">98004f7c2b23311086f7a2f293a9f710</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-03 05:50:47</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-03 05:50:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>14004f7c802331101aabd803d1e7df0d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1107092_high_d_0_event" name="x_1107092_high_d_0_event" sys_domain="global" view="4736b0a03cb1311068bcf327dfe37f81">50004f7cef23311012f2f7bc28270710</sys_ui_form>
+            <sys_ui_section caption="Comments and Work Notes" display_value="Comments and Work Notes" name="x_1107092_high_d_0_event" sys_domain="global" view="4736b0a03cb1311068bcf327dfe37f81">98004f7cba23311029f4a0b87fbd3d0d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-03 05:50:47</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_1107092_high_d_0_event</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-03 05:50:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>50004f7cef23311012f2f7bc28270710</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1107092_high_d_0_event</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="High Desert Chess Club" source="x_1107092_high_d_0">44000f7cdb2331100aa512a1b45796b0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+            <sys_update_name>sys_ui_form_sections_50004f7cef23311012f2f7bc28270710</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-03 05:50:47</sys_updated_on>
+            <sys_user/>
+            <view display_value="Workspace" name="workspace">4736b0a03cb1311068bcf327dfe37f81</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

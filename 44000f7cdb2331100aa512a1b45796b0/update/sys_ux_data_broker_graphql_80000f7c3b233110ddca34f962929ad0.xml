@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_graphql">
+    <sys_ux_data_broker_graphql action="INSERT_OR_UPDATE">
+        <api_name>x_1107092_high_d_0.Event Registration Portal - New Events</api_name>
+        <description/>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Event Registration Portal - New Events</name>
+        <output_schema>[&#13;
+{&#13;
+"name":"result",&#13;
+"label":"Result",&#13;
+"description":"Result Description",&#13;
+"readOnly":false,&#13;
+"fieldType":"object",&#13;
+"valueType":"object",&#13;
+"mandatory":false,&#13;
+"defaultValue":""&#13;
+}&#13;
+]</output_schema>
+        <private>false</private>
+        <props>[&#13;
+{&#13;
+     "name":"searchTerm",&#13;
+     "label":"Search Term",&#13;
+     "fieldType":"string",&#13;
+     "readOnly":false,&#13;
+     "mandatory":true,&#13;
+     "description":"Lookup Search Term"&#13;
+},&#13;
+{&#13;
+     "name":"sysid",&#13;
+     "label":"Lookup Configuration Sysid",&#13;
+     "fieldType":"string"&#13;
+}&#13;
+]</props>
+        <query>query($searchTerm:String!,$sysid:String!){&#13;
+	AppLookupVerify_Query{&#13;
+		lookupVerify(searchTerm:$searchTerm,sys_id:$sysid){&#13;
+			lookupVerifyDataList{&#13;
+				value&#13;
+				primary&#13;
+				secondary&#13;
+				verificationFields{&#13;
+					name&#13;
+					label&#13;
+					type&#13;
+					value&#13;
+					displayValue&#13;
+				}&#13;
+			}&#13;
+			totalCount&#13;
+		}&#13;
+	}&#13;
+}</query>
+        <required_translations>[{"message":"Lookup Configuration Sysid","comment":""},{"message":"Lookup Search Term","comment":""},{"message":"Search Term","comment":""}]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script/>
+        <sys_class_name>sys_ux_data_broker_graphql</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:51:07</sys_created_on>
+        <sys_id>80000f7c3b233110ddca34f962929ad0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Event Registration Portal - New Events</sys_name>
+        <sys_package display_value="High Desert Chess Club" source="x_1107092_high_d_0">44000f7cdb2331100aa512a1b45796b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_update_name>sys_ux_data_broker_graphql_80000f7c3b233110ddca34f962929ad0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:51:07</sys_updated_on>
+        <type>query</type>
+        <use_record_domain>false</use_record_domain>
+    </sys_ux_data_broker_graphql>
+    <sys_translated_text action="delete_multiple" query="documentkey=80000f7c3b233110ddca34f962929ad0"/>
+</record_update>

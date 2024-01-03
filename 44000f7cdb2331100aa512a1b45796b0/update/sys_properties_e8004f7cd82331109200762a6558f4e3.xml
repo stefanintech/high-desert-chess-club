@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Attendee activity formatter fields</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>glide.ui.x_1107092_high_d_0_attendee_activity.fields</name>
+        <read_roles/>
+        <suffix>x_snc_event_reg</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:51:04</sys_created_on>
+        <sys_id>e8004f7cd82331109200762a6558f4e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>glide.ui.x_1107092_high_d_0_attendee_activity.fields</sys_name>
+        <sys_package display_value="High Desert Chess Club" source="x_1107092_high_d_0">44000f7cdb2331100aa512a1b45796b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_update_name>sys_properties_e8004f7cd82331109200762a6558f4e3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:51:04</sys_updated_on>
+        <type>string</type>
+        <value>attendee_status,date_submitted,sys_updated_on,sys_updated_by,*Email*,*Attachments*,event_name</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=e8004f7cd82331109200762a6558f4e3"/>
+</record_update>

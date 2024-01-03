@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_screen_field">
+    <sys_sg_screen_field action="INSERT_OR_UPDATE">
+        <data_item_field_name>attendee_name.time_zone</data_item_field_name>
+        <field_name/>
+        <hidden>false</hidden>
+        <order>600</order>
+        <record_id_field/>
+        <screen display_value="Details">9c004f7c59233110644f5034d655dc98</screen>
+        <screen_data_item_table>x_1107092_high_d_0_attendee</screen_data_item_table>
+        <sys_class_name>sys_sg_screen_field</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:49</sys_created_on>
+        <sys_id>54004f7c7e23311014c67e10229f5c5c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>attendee_name.time_zone</sys_name>
+        <sys_package display_value="High Desert Chess Club" source="x_1107092_high_d_0">44000f7cdb2331100aa512a1b45796b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_update_name>sys_sg_screen_field_54004f7c7e23311014c67e10229f5c5c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:49</sys_updated_on>
+        <type>auto</type>
+        <value_only>false</value_only>
+    </sys_sg_screen_field>
+</record_update>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_formatter">
+    <sys_ui_formatter action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <angular_module/>
+        <formatter>activity.xml</formatter>
+        <name>Event Activities (Filtered)</name>
+        <seismic_component/>
+        <sys_class_name>sys_ui_formatter</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:50:54</sys_created_on>
+        <sys_id>9c004f7c0a2331100d00e8b7e844430c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Event Activities (Filtered)</sys_name>
+        <sys_package display_value="High Desert Chess Club" source="x_1107092_high_d_0">44000f7cdb2331100aa512a1b45796b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="High Desert Chess Club">44000f7cdb2331100aa512a1b45796b0</sys_scope>
+        <sys_update_name>sys_ui_formatter_9c004f7c0a2331100d00e8b7e844430c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 05:50:54</sys_updated_on>
+        <table>x_1107092_high_d_0_event</table>
+        <type>formatter</type>
+    </sys_ui_formatter>
+</record_update>
